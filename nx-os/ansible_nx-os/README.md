@@ -47,16 +47,6 @@ pip install -r requirements.txt
 ```
 <br>
 
-<br>
-
-Install dependencies
-
-
-```bash
-pip install -r requirements.txt
-```
-<br>
-
 Change into the nx-os directory
 
 ```bash
