@@ -1,0 +1,13 @@
+---
+- name: NXOS VLAN configuration
+  hosts: nxos
+  gather_facts: false
+  pre_tasks:
+    - name: Load configuration file
+      ansible.builtin.include_vars:
+        file: "{{ nxos_configuration_file }}"
+  tasks:
+    - name: Configure VLANs
+      cisco.nxos.nxos_vlans:
+        config: "{{ nxos_vlans }}"
+        state: merged

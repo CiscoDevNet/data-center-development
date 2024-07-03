@@ -1,0 +1,13 @@
+---
+- name: Gather facts
+  hosts: nxos
+  gather_facts: false
+  tasks:
+    - name: Gather all facts
+      cisco.nxos.nxos_facts:
+        gather_subset: all
+      register: nxos_facts
+
+    - name: DEBUG | show all gathered facts
+      ansible.builtin.debug:
+        var: nxos_facts
