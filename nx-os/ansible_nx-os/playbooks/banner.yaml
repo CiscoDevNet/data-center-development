@@ -1,0 +1,26 @@
+---
+- name: Configure Banner on NX-OS Switches
+  hosts: nxos_devices
+  connection: network_cli
+  tasks:
+    - name: Set banner on NX-OS Switches
+      nxos_banner:
+        banner: motd
+        text: |
+          *************************************************
+          ***          Authorized access only!          ***
+          ***            - - - - - - - - - -            ***
+          ***    MOTD Banner Configured with Ansible    ***
+          *************************************************
+        state: present
+
+    - name: Set exec banner on NX-OS Switches
+      nxos_banner:
+        banner: exec
+        text: |
+          *************************************************
+          ***           Welcome to NX-OS CLI            ***
+          ***          Authorized access only           ***
+          ***    Exec Banner Configured with Ansible    ***
+          *************************************************
+        state: present

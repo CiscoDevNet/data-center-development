@@ -21,8 +21,8 @@ In the NX-OS section we discuss using Cisco Modeling Labs to host a lab with a n
 Before diving into each section, clone the main repo and change directories to this point.
 
 ```bash
-git clone
-cd
+git clone https://github.com/xanderstevenson/data-center-development.git
+cd data-center-development
 ```
 <br>
 
@@ -47,5 +47,18 @@ pip install -r requirements.txt
 ```
 <br>
 
+<br>
 
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+<br>
+
+Change into the nx-os directory
+
+```bash
+cd nx-os/
+```
 
