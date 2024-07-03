@@ -64,21 +64,7 @@ ansible-playbook -i hosts playbooks/banner.yaml
 
 - Result:
 
-Nexus9k# show banner exec 
-
-*************************************************
-***           Welcome to NX-OS CLI            ***
-***          Authorized access only           ***
-***    Exec Banner Configured with Ansible    ***
-*************************************************
-
-Nexus9k# show banner motd 
-
-*************************************************
-***          Authorized access only!          ***
-***            - - - - - - - - - -            ***
-***    MOTD Banner Configured with Ansible    ***
-*************************************************
+banner image
 
 <br>
 
