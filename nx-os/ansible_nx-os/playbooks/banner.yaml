@@ -1,9 +1,16 @@
 ---
 - name: Configure Banner on NX-OS Switches
-  hosts: nxos_devices
-  connection: network_cli
+  hosts: nxos
+  gather_facts: no
   tasks:
-    - name: Set banner on NX-OS Switches
+    - name: Check current MOTD banner
+      nxos_command:
+        commands:
+          - show banner motd
+      register: current_motd_banner
+      ignore_errors: yes
+
+    - name: Set MOTD banner on NX-OS Switches
       nxos_banner:
         banner: motd
         text: |
@@ -13,6 +20,17 @@
           ***    MOTD Banner Configured with Ansible    ***
           *************************************************
         state: present
+      when: 
+        - current_motd_banner is defined
+        - current_motd_banner.stdout[0] is defined
+        - current_motd_banner.stdout[0].find("Authorized access only!") == -1
+
+    - name: Check current exec banner
+      nxos_command:
+        commands:
+          - show banner exec
+      register: current_exec_banner
+      ignore_errors: yes
 
     - name: Set exec banner on NX-OS Switches
       nxos_banner:
@@ -24,3 +42,7 @@
           ***    Exec Banner Configured with Ansible    ***
           *************************************************
         state: present
+      when: 
+        - current_exec_banner is defined
+        - current_exec_banner.stdout[0] is defined
+        - current_exec_banner.stdout[0].find("Welcome to NX-OS CLI") == -1

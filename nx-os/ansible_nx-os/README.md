@@ -54,6 +54,19 @@ cd nx-os/
 ```
 <br>
 
+Add the IP or URL of your NX-OS device to the hosts inventory file.
+
+<br>
+
+Export the Username and Password of your NX-OS device (for CML, its admin/cisco)
+
+```bash
+export NXOS_User=
+export NXOS_Password=
+```
+
+<br>
+
 ## Playbooks
 
 
@@ -72,4 +85,17 @@ ansible-playbook -i hosts playbooks/banner.yaml
 banner image
 
 <br>
+
+
+
+
+## Resources
+
+- Cisco.Nxos Ansible Modules: https://docs.ansible.com/ansible/latest/collections/cisco/nxos/index.html
+
+- ansible-nxos: https://github.com/Anyweb/ansible-nxos
+
+- CiscoNXOSFacts: https://github.com/automateyournetwork/CiscoNXOSFacts/tree/main
+
+
 

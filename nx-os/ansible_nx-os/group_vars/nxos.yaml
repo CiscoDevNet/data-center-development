@@ -1,0 +1,13 @@
+# Ansible settings
+ansible_connection: network_cli
+ansible_network_os: cisco.nxos.nxos
+ansible_user: "{{ lookup('ansible.builtin.env', 'NXOS_User', default='admin') }}"
+ansible_password: "{{ lookup('ansible.builtin.env', 'NXOS_Password') }}"
+ansible_httpapi_use_ssl: true
+ansible_httpapi_validate_certs: false
+
+# Backup
+nxos_backup_location: "{{ lookup('ansible.builtin.env', 'NXOS_BACKUP_LOCATION', default='./backup') }}"
+
+# Configuration file
+nxos_configuration_file: "{{ lookup('ansible.builtin.env', 'NXOS_CONFIGURATION_FILE', default='../vars/nxos-config.yml') }}"
