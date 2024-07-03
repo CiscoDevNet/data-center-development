@@ -62,7 +62,6 @@ pip install -r requirements.txt
 ansible-playbook -i hosts playbooks/banner.yaml
 ```
 
-`
 - Result:
 
 Nexus9k# show banner exec 
