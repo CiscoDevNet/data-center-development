@@ -16,7 +16,7 @@ In the NX-OS section we discuss using Cisco Modeling Labs to host a lab with a n
 - [Python](https://www.python.org/downloads/) 3.8 or higher installed (tested on Python 3.10.14 and 3.11.9)
 - Ansible installed
 
-## Getting Started
+## Environment Setup
 
 Before diving into each section, clone the main repo and change directories to this point.
 
@@ -51,6 +51,7 @@ pip install -r requirements.txt
 
 Install dependencies
 
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -61,4 +62,24 @@ Change into the nx-os directory
 ```bash
 cd nx-os/
 ```
+<br>
+
+## Playbooks
+
+
+- Name: banner.yaml
+
+- Purpose: Set the Exec and MOTD banners on NX-OS
+
+- How to run:
+
+```bash
+ansible-playbook -i hosts playbooks/banner.yaml
+```
+
+- Result:
+
+banner image
+
+<br>
 
