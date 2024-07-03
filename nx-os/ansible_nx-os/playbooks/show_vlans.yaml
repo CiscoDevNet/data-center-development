@@ -1,0 +1,13 @@
+---
+- name: Show VLAN facts
+  hosts: nxos
+  gather_facts: false
+  tasks:
+    - name: Gather facts
+      cisco.nxos.nxos_command:
+        commands: show vlan brief
+      register: nxos_facts
+
+    - name: Show VLAN information
+      ansible.builtin.debug:
+        msg: "{{ nxos_facts.stdout }}"

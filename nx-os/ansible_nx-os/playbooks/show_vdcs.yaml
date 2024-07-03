@@ -1,0 +1,13 @@
+---
+- name: Show VDC facts
+  hosts: nxos
+  gather_facts: false
+  tasks:
+    - name: Gather VDC facts
+      cisco.nxos.nxos_command:
+        commands: show vdc
+      register: vdc_facts
+
+    - name: Show VDC information
+      ansible.builtin.debug:
+        msg: "{{ vdc_facts.stdout }}"

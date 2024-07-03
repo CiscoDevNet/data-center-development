@@ -1,0 +1,13 @@
+---
+- name: Show VRF facts
+  hosts: nxos
+  gather_facts: false
+  tasks:
+    - name: Gather facts
+      cisco.nxos.nxos_command:
+        commands: show vrf
+      register: nxos_facts
+
+    - name: Show VRF information
+      ansible.builtin.debug:
+        msg: "{{ nxos_facts.stdout }}"

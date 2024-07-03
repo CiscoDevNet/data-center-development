@@ -1,0 +1,26 @@
+# NXOS VLAN Configuration example
+---
+nxos_vlans:
+  # https://docs.ansible.com/ansible/latest/collections/cisco/nxos/nxos_vlans_module.html#ansible-collections-cisco-nxos-nxos-vlans-module
+  - vlan_id: 1050
+    name: ansible_vlan1050
+    state: active
+  - vlan_id: 1051
+    name: ansible_vlan1051
+    state: suspend
+  - vlan_id: 1052
+    name: ansible_vlan1052
+    state: active
+
+# NXOS VRF Configuration example
+
+nxos_vrf:
+  # https://docs.ansible.com/ansible/latest/collections/cisco/nxos/nxos_vrf_module.html#ansible-collections-cisco-nxos-nxos-vrf-module
+  - name: ansible_vrf01
+    description: VRF01 configured by ansible
+    admin_state: up
+    state: present
+  - name: ansible_vrf02
+    description: VRF02 configured by ansible
+    admin_state: down
+    state: present
