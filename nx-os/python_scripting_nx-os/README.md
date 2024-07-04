@@ -40,5 +40,66 @@ Python 3.6.8
 4. Through Python scripts that you run locally against the device running NX-OS. Two great ways to create such scripts are through the NX-API Sandbox and Postman,
 both of which provide buttons for easily converting (API requests in the case of Postman and CLI commands or Data Models in the case of the NX-API Sandbox) into Python scripts.
 
+<br>
+
+## Prerequisites
+
+- You should have an enviornment with an NX-OS 9000-series switch running NX-OS. You should be able to ping that device and enter it via SSH.
+- OS: Mac, Windows, Linux should all be fine
+- Web browser
+- IDE - [Visual Studio Code](https://code.visualstudio.com/Download) recommended
+- [Python](https://www.python.org/downloads/) 3.8 or higher installed (tested on Python 3.10.14 and 3.11.9)
+- Ansible installed
+<br>
+
+## Environment Setup
+
+### Before diving into each section, clone the main repo (if you haven't already done so) and change directories to this point.
+
+```bash
+git clone https://github.com/xanderstevenson/data-center-development.git
+cd data-center-development
+```
+<br>
+
+### Create and activate a Python virtual environment
+
+- Mac/Linux
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+- Windows
+```bash
+python3 -m venv venv
+venv\Scripts\activate
+```
+<br>
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+<br>
+
+### Change into the nx-os directory
+
+```bash
+cd nx-os/python_scripting_nx-os
+```
+<br>
+
+### Export environmental variables
+
+<br>
+
+### Run the scripts
+
+e.g. 
+
+``` bash
+python3 nxos_resources.py
+```
 
 
