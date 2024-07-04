@@ -99,16 +99,6 @@ export NXOS_Password=
 
   <br>
 
-- Name: `remove_configurations.yaml`
-  - Purpose: Remove all VRFs, VDCs, and VLANs configurations except the default ones on NX-OS devices
-  - How to run:
-
-    ```bash
-    ansible-playbook playbooks/remove_configurations.yaml
-    ```
-
-  <br>
-
 
 - Name: `show_vdcs.yaml`
   - Purpose: Show VDCs on NX-OS devices
