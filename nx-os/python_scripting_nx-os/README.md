@@ -102,11 +102,12 @@ nxos_resources.py
 
 ### On-Device scripts
 
-These devices are designed to run within the Guest Shell of a Cisco NX-OS device. Therefore, after making sure guestshell is enabled, you will enter the NX-OS GuestShell and **paste in the entire contents of the script found in this directoy --- into the guestshell on NX-OS --- and you will then hit ENTER**.
+These devices are designed to run within the Guest Shell of a Cisco NX-OS device. Therefore, after making sure guestshell is enabled, you will enter the NX-OS GuestShell and **paste in the entire contents of the script found in this directoy --- into the /bootflash/scripts directory in the guestshell on NX-OS --- and you will then hit ENTER**. We place scripts there because that dir will be persistent across reboots of the device.
 
 ```bash
 guestshell enable
 guestshell
+cd /bootflash/scripts
 ```
 <br>
 
