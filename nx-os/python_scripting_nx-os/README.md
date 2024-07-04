@@ -83,7 +83,7 @@ pip install -r requirements.txt
 ```
 <br>
 
-### Change into the nx-os directory
+### Change into the python_scripting_nx-os directory
 
 ```bash
 cd nx-os/python_scripting_nx-os
