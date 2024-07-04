@@ -77,6 +77,7 @@ copy running-config startup-config
 
 ```
 ssh admin@192.168.254.101
+
 The authenticity of host '192.168.254.101 (192.168.254.101)' can't be established.
 RSA key fingerprint is SHA256:******************************.
 This key is not known by any other names.
@@ -93,6 +94,7 @@ Any use or disclosure, in whole or in part, of the Nexus 9000v Software or Docum
 http://www.gnu.org/licenses/gpl.html and
 http://www.gnu.org/licenses/lgpl.html
 ***************************************************************
+
 Nexus9k# 
 ```
 
