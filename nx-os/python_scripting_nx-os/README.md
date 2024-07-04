@@ -126,6 +126,7 @@ Add a cron job entry to schedule the script (e.g., to run every hour):
 ```0 * * * * /usr/bin/python /bootflash/scripts/nxos_resources.py```
 <br><br>
 
+
 2. From Bash (Manual Execution or Script)
    
 You can manually execute the script or include it in another Bash script:
@@ -147,6 +148,7 @@ chmod +x your_script.sh
 ./your_script.sh
 ```
 <br><br>
+
 
 3. From NX-CLI (EEM Script)
 You can use Embedded Event Manager (EEM) to run the script:
@@ -175,6 +177,7 @@ curl -X POST -d '{"ins_api": {"version": "1.0", "type": "cli_show", "chunk": "0"
 <br>
 <br>
 
+
 5. From an External Scheduler (e.g., a remote server using SSH)
    
 You can use a remote scheduler or cron job on another machine to SSH into the NX-OS device and run the script:
@@ -186,6 +189,7 @@ Add an entry to SSH into the NX-OS device and run the script (e.g., every hour):
 ```0 * * * * ssh user@nxos_device 'guestshell run python /bootflash/scripts/nxos_resources.py'```
 <br>
 Each method has its own use case, whether you need the script to run locally within the NX-OS environment or remotely from an external system.
+<br>
 <br>
 
 #### List of On-Device scripts
