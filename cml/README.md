@@ -19,19 +19,27 @@ Once you have your CML license, you can go ahead and provision it as a VM in Pro
 - For ISO image, choose the CML ISO you’ve uploaded to var/lib/vz/template/iso/ on your ProxMox server.
 - Choose Linux, and the latest version
 
+<br>
+
 **System tab**
 
 - q35 for Machine
 - OVMP (UEFI) for BIOS
 
+<br>
+
 **Disks tab**
 
 Disk size 64GB
+
+<br>
 
 **CPU tab**
 
 4Cores
 I use 5
+
+<br>
 
 **Memory tab**
 
