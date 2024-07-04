@@ -96,7 +96,7 @@ cd nx-os/python_scripting_nx-os
 
 ## Usage
 
-Some of the scripts in the directory are meant to be run locally against a connected or remote device running NX-OS. Others are meant to be installed within NX-OS and run using Python from there. The following list of scripts with descriptions will make it clear where each is intended to be ran from:
+Some of the scripts in the directory are meant to be run locally against a connected or remote device running NX-OS. Others are meant to be installed within NX-OS and run using Python from there. The scripts meant to be run from your local device are in the 'local_device' directory, while those meant to be run from *within* NX-OS are in the 'on_device' directory.
 
 nxos_resources.py
 
