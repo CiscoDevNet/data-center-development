@@ -46,10 +46,8 @@ both of which provide buttons for easily converting (API requests in the case of
 
 - You should have an enviornment with an NX-OS 9000-series switch running NX-OS. You should be able to ping that device and enter it via SSH.
 - OS: Mac, Windows, Linux should all be fine
-- Web browser
 - IDE - [Visual Studio Code](https://code.visualstudio.com/Download) recommended
-- [Python](https://www.python.org/downloads/) 3.8 or higher installed (tested on Python 3.10.14 and 3.11.9)
-- Ansible installed
+- [Python](https://www.python.org/downloads/) 3 installed
 <br>
 
 ## Environment Setup
