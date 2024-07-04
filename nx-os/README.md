@@ -13,7 +13,7 @@ This is the launch page for thr NX-OS section of Data Center Development. I've i
 
 ## CML Lab Setup
 
-I'm using Cisco Modeling Labs v2.6.1 running as a VM in ProxMox. As described in the CML section of this repo, I have an external connectior in bridge mode with an unmanaged switch attached to it. To this unmanaged switch, I've added a NX-OS 9000 node.
+I'm using Cisco Modeling Labs v2.6.1 running as a VM in ProxMox. As described in the [CML section](https://github.com/xanderstevenson/data-center-development/tree/main/cml) of this repo, I have an external connectior in bridge mode with an unmanaged switch attached to it. To this unmanaged switch, I've added a NX-OS 9000 node.
 
 An NX-OS node in CML requires 8GB (8192 MiB) of DRAM and 2 vCPUs
 
