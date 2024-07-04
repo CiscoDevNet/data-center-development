@@ -118,32 +118,46 @@ To schedule and run the nxos_resources.py script on Cisco NX-OS, you have severa
 You can use cron in the Guest Shell to schedule the script:
 
 Open the crontab file for editing:
+
 ```crontab -e```
+
 Add a cron job entry to schedule the script (e.g., to run every hour):
-0 * * * * /usr/bin/python /bootflash/scripts/nxos_resources.py
+
+```0 * * * * /usr/bin/python /bootflash/scripts/nxos_resources.py```
 <br>
 
 2. From Bash (Manual Execution or Script)
+   
 You can manually execute the script or include it in another Bash script:
 
 Manual execution:
 ```python /bootflash/scripts/nxos_resources.py```
+
 Include in another script:
-```#!/bin/bash
-python /bootflash/scripts/nxos_resources.py```
+
+```
+#!/bin/bash
+python /bootflash/scripts/nxos_resources.py
+```
+
 Then make your script executable and run it:
-```chmod +x your_script.sh
-./your_script.sh```
+
+```
+chmod +x your_script.sh
+./your_script.sh
+```
 <br>
 
 3. From NX-CLI (EEM Script)
 You can use Embedded Event Manager (EEM) to run the script:
 
 Create an EEM applet:
+
 ```
 event manager applet RunScript
 event timer cron cron-entry "0 * * * *"
-action 1.0 cli command "guestshell run python /bootflash/scripts/nxos_resources.py"```
+action 1.0 cli command "guestshell run python /bootflash/scripts/nxos_resources.py"
+```
 <br>
 
 4. From Outside via API/cURL
@@ -152,17 +166,25 @@ You can use the NX-API to execute CLI commands remotely, including running the s
 Enable NX-API on the device:
 
 ```feature nxapi```
+
 Use cURL to invoke the script:
-```curl -X POST -d '{"ins_api": {"version": "1.0", "type": "cli_show", "chunk": "0", "sid": "1", "input": "guestshell run python /bootflash/scripts/nxos_resources.py", "output_format": "json"}}' http://<nxos_device_ip>/ins -u <username>:<password> -H "Content-Type: application/json"```
+
+```
+curl -X POST -d '{"ins_api": {"version": "1.0", "type": "cli_show", "chunk": "0", "sid": "1", "input": "guestshell run python /bootflash/scripts/nxos_resources.py", "output_format": "json"}}' http://<nxos_device_ip>/ins -u <username>:<password> -H "Content-Type: application/json"
+```
 <br>
 
 5. From an External Scheduler (e.g., a remote server using SSH)
+   
 You can use a remote scheduler or cron job on another machine to SSH into the NX-OS device and run the script:
-```crontab -e```
-Add an entry to SSH into the NX-OS device and run the script (e.g., every hour):
-```0 * * * * ssh user@nxos_device 'guestshell run python /bootflash/scripts/nxos_resources.py'```
 
-Each method has its own use case, whether you need the script to run locally within the NX-OS environment or remotely from an external system.```
+```crontab -e``
+`
+Add an entry to SSH into the NX-OS device and run the script (e.g., every hour):
+
+```0 * * * * ssh user@nxos_device 'guestshell run python /bootflash/scripts/nxos_resources.py'```
+<br>
+Each method has its own use case, whether you need the script to run locally within the NX-OS environment or remotely from an external system.
 <br>
 
 #### List of On-Device scripts
