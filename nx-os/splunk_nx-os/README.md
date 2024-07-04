@@ -7,7 +7,7 @@ user can quickly discover and share insights. The raw data is sent to the Splunk
 Splunk Universal Forwarder. Universal Forwarders provide reliable and secure data collection
 from remote sources while forwarding data into Splunk Enterprise for indexing and consolidation. 
 
-A Splunk Enterprise infrastructure can scale to tens of thousands of remote systems, collecting terabytes of data with minimal impact on performance.
+A Splunk Enterprise infrastructure can scale to tens of thousands of remote systems, collecting terabytes of data with minimal impact on performance.
 
 NX-OS with Splunk enables network operators to:
 
