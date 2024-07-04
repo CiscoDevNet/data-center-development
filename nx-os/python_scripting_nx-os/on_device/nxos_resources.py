@@ -34,3 +34,4 @@ if __name__ == "__main__":
     print(top_processes)
     print("="*40)
 EOF
+python3 nxos_resources.py
