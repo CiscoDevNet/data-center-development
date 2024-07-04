@@ -26,7 +26,7 @@ Python 3.8.14
 ```
 <br>
 
-3. Through either the Python2 or Python3 version installed in the GuestShell
+3. Through either the Python2 or Python3 version installed in the GuestShell in NX-OS
 
 ```
 nxos# guestshell
