@@ -17,7 +17,7 @@ This is the launch page for thr NX-OS section of Data Center Development. I've i
 
 - An NX-OS node in CML requires 8GB (8192 MiB) of DRAM and 2 vCPUs
 
-![Alt text](https://github.com/xanderstevenson/data-center-development/blob/main/nx-os/images/nx-os_node_setup.png?raw=true)
+![image](https://github.com/xanderstevenson/data-center-development/assets/27918923/9b533134-4ab6-4060-b3ef-453694f67be3)
 
 
 - I've added a link from port 1 on the unmanaged switch to Ethernet1/1 on the NX-OS
