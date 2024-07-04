@@ -74,7 +74,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/banner.yaml
+    ansible-playbook playbooks/banner.yaml
     ```
 
   <br>
@@ -84,7 +84,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/backup_config.yaml
+    ansible-playbook playbooks/backup_config.yaml
     ```
 
   <br>
@@ -94,7 +94,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/gather_facts.yaml
+    ansible-playbook playbooks/gather_facts.yaml
     ```
 
   <br>
@@ -104,7 +104,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/remove_configurations.yaml
+    ansible-playbook playbooks/remove_configurations.yaml
     ```
 
   <br>
@@ -114,7 +114,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/configure_vdcs.yaml
+    ansible-playbook playbooks/configure_vdcs.yaml
     ```
 
   <br>
@@ -124,7 +124,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/show_vdcs.yaml
+    ansible-playbook playbooks/show_vdcs.yaml
     ```
 
   <br>
@@ -134,7 +134,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/configure_vlans.yaml
+    ansible-playbook playbooks/configure_vlans.yaml
     ```
 
   <br>
@@ -144,7 +144,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/show_vlans.yaml
+    ansible-playbook playbooks/show_vlans.yaml
     ```
 
   <br>
@@ -154,7 +154,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/configure_vrfs.yaml
+    ansible-playbook playbooks/configure_vrfs.yaml
     ```
 
   <br>
@@ -164,7 +164,7 @@ export NXOS_Password=
   - How to run:
 
     ```bash
-    ansible-playbook -i hosts playbooks/show_vrfs.yaml
+    ansible-playbook playbooks/show_vrfs.yaml
     ```
 
   <br>
