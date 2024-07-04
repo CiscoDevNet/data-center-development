@@ -16,6 +16,7 @@ In the NX-OS section we discuss using Cisco Modeling Labs to host a lab with a n
 - [Python](https://www.python.org/downloads/) 3.8 or higher installed (tested on Python 3.10.14 and 3.11.9)
 - Ansible installed
 
+
 ## Environment Setup
 
 ### Before diving into each section, clone the main repo (if you haven't already done so) and change directories to this point.
