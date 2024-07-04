@@ -109,15 +109,6 @@ export NXOS_Password=
 
   <br>
 
-- Name: `configure_vdcs.yaml`
-  - Purpose: Configure VDCs on NX-OS devices
-  - How to run:
-
-    ```bash
-    ansible-playbook playbooks/configure_vdcs.yaml
-    ```
-
-  <br>
 
 - Name: `show_vdcs.yaml`
   - Purpose: Show VDCs on NX-OS devices
