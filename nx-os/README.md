@@ -17,7 +17,7 @@ I'm using Cisco Modeling Labs v2.6.1 running as a VM in ProxMox. As described in
 
 An NX-OS node in CML requires *GB (8192 MiB) of DRAM and 2 vCPUs
 
-![Alt text]([URL](https://github.com/xanderstevenson/data-center-development/blob/main/nx-os/images/nx-os_node_setup.png?raw=true))
+![Alt text](https://github.com/xanderstevenson/data-center-development/blob/main/nx-os/images/nx-os_node_setup.png?raw=true)
 
 
 I've added a link from port 1 on the unmanaged switch to Ethernet1/1 on the NX-OS
