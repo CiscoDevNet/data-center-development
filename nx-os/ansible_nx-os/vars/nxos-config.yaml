@@ -8,9 +8,6 @@ nxos_vlans:
   - vlan_id: 1051
     name: ansible_vlan1051
     state: suspend
-  - vlan_id: 1052
-    name: ansible_vlan1052
-    state: active
 
 # NXOS VRF Configuration example
 
@@ -26,25 +23,3 @@ nxos_vrf:
     state: present
 
 
-# NXOS VDC Configuration example
-
-nxos_vdc:
-  # https://docs.ansible.com/ansible/latest/collections/cisco/nxos/nxos_vdc_module.html#ansible-collections-cisco-nxos-nxos-vdc-module
-  - name: VDC1
-    state: present
-    allocation:
-      interfaces:
-        - ethernet1/1
-        - ethernet1/2
-    limit_resource_module_type:
-      routing_engine: 1
-      qos_engine: 1
-  - name: VDC2
-    state: present
-    allocation:
-      interfaces:
-        - ethernet1/3
-        - ethernet1/4
-    limit_resource_module_type:
-      routing_engine: 2
-      qos_engine: 2

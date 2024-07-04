@@ -10,4 +10,4 @@ ansible_httpapi_validate_certs: false
 nxos_backup_location: "{{ lookup('ansible.builtin.env', 'NXOS_BACKUP_LOCATION', default='./backup') }}"
 
 # Configuration file
-nxos_configuration_file: "{{ lookup('ansible.builtin.env', 'NXOS_CONFIGURATION_FILE', default='../vars/nxos-config.yml') }}"
+nxos_configuration_file: "../vars/nxos-config.yaml"
