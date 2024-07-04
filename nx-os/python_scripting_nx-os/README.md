@@ -124,7 +124,7 @@ Open the crontab file for editing:
 Add a cron job entry to schedule the script (e.g., to run every hour):
 
 ```0 * * * * /usr/bin/python /bootflash/scripts/nxos_resources.py```
-<br>
+<br><br>
 
 2. From Bash (Manual Execution or Script)
    
@@ -146,7 +146,7 @@ Then make your script executable and run it:
 chmod +x your_script.sh
 ./your_script.sh
 ```
-<br>
+<br><br>
 
 3. From NX-CLI (EEM Script)
 You can use Embedded Event Manager (EEM) to run the script:
@@ -158,7 +158,7 @@ event manager applet RunScript
 event timer cron cron-entry "0 * * * *"
 action 1.0 cli command "guestshell run python /bootflash/scripts/nxos_resources.py"
 ```
-<br>
+<br><br>
 
 4. From Outside via API/cURL
 You can use the NX-API to execute CLI commands remotely, including running the script:
@@ -173,13 +173,14 @@ Use cURL to invoke the script:
 curl -X POST -d '{"ins_api": {"version": "1.0", "type": "cli_show", "chunk": "0", "sid": "1", "input": "guestshell run python /bootflash/scripts/nxos_resources.py", "output_format": "json"}}' http://<nxos_device_ip>/ins -u <username>:<password> -H "Content-Type: application/json"
 ```
 <br>
+<br>
 
 5. From an External Scheduler (e.g., a remote server using SSH)
    
 You can use a remote scheduler or cron job on another machine to SSH into the NX-OS device and run the script:
 
-```crontab -e``
-`
+```crontab -e```
+
 Add an entry to SSH into the NX-OS device and run the script (e.g., every hour):
 
 ```0 * * * * ssh user@nxos_device 'guestshell run python /bootflash/scripts/nxos_resources.py'```
