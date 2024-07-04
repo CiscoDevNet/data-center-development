@@ -17,7 +17,8 @@ I'm using Cisco Modeling Labs v2.6.1 running as a VM in ProxMox. As described in
 
 An NX-OS node in CML requires *GB (8192 MiB) of DRAM and 2 vCPUs
 
-image: nx-os_node_setup
+![Alt text]([URL](https://github.com/xanderstevenson/data-center-development/blob/main/nx-os/images/nx-os_node_setup.png?raw=true))
+
 
 I've added a link from port 1 on the unmanaged switch to Ethernet1/1 on the NX-OS
 
@@ -38,6 +39,7 @@ interface Ethernet1/1
     no shutdown
     ping 192.168.254.65
 
+```
 Nexus9k(config-if)# ping 192.168.254.65
 PING 192.168.254.65 (192.168.254.65): 56 data bytes
 64 bytes from 192.168.254.65: icmp_seq=0 ttl=63 time=4.895 ms
@@ -45,11 +47,10 @@ PING 192.168.254.65 (192.168.254.65): 56 data bytes
 64 bytes from 192.168.254.65: icmp_seq=2 ttl=63 time=3.01 ms
 64 bytes from 192.168.254.65: icmp_seq=3 ttl=63 time=2.959 ms
 64 bytes from 192.168.254.65: icmp_seq=4 ttl=63 time=2.86 ms
-
 --- 192.168.254.65 ping statistics ---
 5 packets transmitted, 5 packets received, 0.00% packet loss
 round-trip min/avg/max = 2.86/3.625/4.895 ms
-
+```
 
     exit
 exit
