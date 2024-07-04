@@ -17,5 +17,15 @@ NX-OS with Splunk enables network operators to:
 - Authenticate and audit configuration changes
 - Collect performance data from network devices
 
+## Step 1
 
-Download Splunk Enterprise and the Universal Forwarder here: https://www.splunk.com/en_us/download.html
+- Download Splunk Enterprise and the Universal Forwarder: https://www.splunk.com/en_us/download.html
+- Choose the Splunk Enterprise version based on the OS of your control node
+- Choose the version of Universal Forwarder based on the results of running `'show version' in NX-OS.
+  
+- Install Splunk Enterprise on your control node (I installed it on my laptop)
+
+- Install the Universal Forwarder on the device running NX-OS
+
+
+
