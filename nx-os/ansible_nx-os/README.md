@@ -58,6 +58,10 @@ cd nx-os/
 
 ### Add the IP or URL of your NX-OS device to the hosts inventory file.
 
+```
+[nxos]
+<your IP/URL goes here> ansible_network_os=nxos
+```
 <br>
 
 ### Export the Username and Password of your NX-OS device (for CML, its admin/cisco)
