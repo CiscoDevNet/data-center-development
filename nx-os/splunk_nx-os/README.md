@@ -1,5 +1,7 @@
 # Splunk Telemetry and NX-OS
 
+<NOTE> I wasn't able to install the Splunk Universal Forwarder in Guestshell on NX-OS running on Cisco Modeling Labs due to lack of disk space <NOTE>
+
 Splunk is a web-based data collection, analysis, and monitoring tool. Splunk Enterprise helps
 you gain valuable operational intelligence from your machine-generated data. It comes with a
 full range of powerful search, visualization and pre-packaged content for use-cases where any
@@ -38,8 +40,11 @@ On NX-OS in GuestShell
 curl -O http://<insert-local-ip>/splunkforwarder-<insert-you-file>.tgz
 ```
 
+- Note: to only place with enough space to install the forwarder in the GuestShell was in /bootflash. This command was necessary to extract it:
 
+```
+tar -xzpf splunkforwarder-9.2.2-d76edf6f0a15-Linux-x86_64.tgz --no-same-owner --no-same-permissions
+```
 
-
-
+- Follow Steps here: https://docs.splunk.com/Documentation/Forwarder/9.2.2/Forwarder/Installanixuniversalforwarder
 
