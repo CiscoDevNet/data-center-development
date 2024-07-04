@@ -48,6 +48,8 @@ I use 16 (16284 MiB)
 
 - Now you can start your first lab.
 
+- First Steps: Create an external connector node, set it in ‘bridge mode’, and start it. Then create an unmanaged switch, start it, and connect it to the external connector. Now you're ready to add nodes like routers and switches!
+
 <br>
 
 ## CML Resources
