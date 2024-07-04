@@ -11,7 +11,7 @@ Once you have your CML license, you can go ahead and provision it as a VM in Pro
 
 - Within ProxMox, click ‘Create a VM’. The setting you use are pretty standard as compared to other VMs. I lef tthe default for most settings.
 
-- Here are some setting which are peculiar to CML and must be set:
+Here are some setting which are peculiar to CML and must be set:
 
 **OS tab**
 
