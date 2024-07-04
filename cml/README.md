@@ -16,7 +16,6 @@ Here are some setting which are peculiar to CML and must be set:
 <br>
 
 **OS tab**
-<hr>
 
 - Choose 'Use CD/DVD disk image file'
 - For ISO image, choose the CML ISO you’ve uploaded to var/lib/vz/template/iso/ on your ProxMox server.
@@ -25,7 +24,6 @@ Here are some setting which are peculiar to CML and must be set:
 <br>
 
 **System tab**
-<hr>
 
 - q35 for Machine
 - OVMP (UEFI) for BIOS
@@ -33,14 +31,12 @@ Here are some setting which are peculiar to CML and must be set:
 <br>
 
 **Disks tab**
-<hr>
 
 Disk size 64GB
 
 <br>
 
 **CPU tab**
-<hr>
 
 4Cores
 I use 5
@@ -48,7 +44,6 @@ I use 5
 <br>
 
 **Memory tab**
-<hr>
 
 - At least 8GB (8192 MiB)
 - I use 16 (16284 MiB)
