@@ -37,7 +37,7 @@ Python 3.6.8
 <br>
 
 4. Through Python scripts that you run locally against the device running NX-OS. Two great ways to create such scripts are through the NX-API Sandbox and Postman,
-5. both of which provide buttons for easily converting (API requests in the case of Postman and CLI commands or Data Models in the case of the NX-API Sandbox) into Python scripts.
+both of which provide buttons for easily converting (API requests in the case of Postman and CLI commands or Data Models in the case of the NX-API Sandbox) into Python scripts.
 
-6. 
+
 
