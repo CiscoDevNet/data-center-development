@@ -49,6 +49,7 @@ I use 5
 - I use 16 (16284 MiB)
 
 <br>
+<hr>
 
 - After that, start the CML VM, if you didn’t choose for it to automatically start. CML will walk you through the installation. You’ll choose a username and password and will probably be warned this is a standalone installation, which is fine.
 
