@@ -53,3 +53,7 @@ I use 16 (16284 MiB)
 <br>
 
 ## CML Resources
+
+[Introduction to Network Simulations with Cisco Modeling Labs | CMLLAB](https://u.cisco.com/paths/243) on Cisco U.
+
+Gain an introductory understanding of the Cisco network simulation tool, Cisco Modeling Labs.
