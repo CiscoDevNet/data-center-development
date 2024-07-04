@@ -102,9 +102,19 @@ nxos_resources.py
 
 <br>
 
-### Run the scripts
+### On-Device scripts
 
-e.g. 
+These devices are designed to run within the Guest Shell of a Cisco NX-OS device. Therefore, after making sure guestshell is enabled, you will enter the NX-OS GuestShell and **paste in the entire contents of the script found in this directoy --- into the guestshell on NX-OS --- and you will then hit ENTER**.
+
+```bash
+guestshell enable
+guestshell
+```
+
+
+**1. nxos_resources.py**
+
+Description: When executed, the script will print the system's CPU information and the top 10 processes by memory usage. The output is formatted with separators for better readability.
 
 ``` bash
 python3 nxos_resources.py
