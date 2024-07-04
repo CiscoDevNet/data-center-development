@@ -9,8 +9,6 @@ from remote sources while forwarding data into Splunk Enterprise for indexing an
 
 A Splunk Enterprise infrastructure can scale to tens of thousands of remote systems, collecting terabytes of data with minimal impact on performance.
 
-For additional information, see http://www.splunk.com/en_us/download/universalforwarder.html.
-
 NX-OS with Splunk enables network operators to:
 
 • Gain visibility into their infrastructure
@@ -18,5 +16,6 @@ NX-OS with Splunk enables network operators to:
 • Track power usage and temperature
 • Authenticate and audit configuration changes
 • Collect performance data from network devices
+
 
 Download Splunk Enterprise and the Universal Forwarder here: https://www.splunk.com/en_us/download.html
