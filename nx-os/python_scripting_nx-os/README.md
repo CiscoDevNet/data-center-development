@@ -125,7 +125,7 @@ Add a cron job entry to schedule the script (e.g., to run every hour):
 
 ```0 * * * * /usr/bin/python /bootflash/scripts/nxos_resources.py```
 <br><br>
-
+<br>
 
 2. From Bash (Manual Execution or Script)
    
@@ -187,7 +187,9 @@ You can use a remote scheduler or cron job on another machine to SSH into the NX
 Add an entry to SSH into the NX-OS device and run the script (e.g., every hour):
 
 ```0 * * * * ssh user@nxos_device 'guestshell run python /bootflash/scripts/nxos_resources.py'```
+
 <br>
+
 Each method has its own use case, whether you need the script to run locally within the NX-OS environment or remotely from an external system.
 <br>
 <br>
