@@ -110,14 +110,11 @@ These devices are designed to run within the Guest Shell of a Cisco NX-OS device
 guestshell enable
 guestshell
 ```
-
+<br>
 
 **1. nxos_resources.py**
 
 Description: When executed, the script will print the system's CPU information and the top 10 processes by memory usage. The output is formatted with separators for better readability.
 
-``` bash
-python3 nxos_resources.py
-```
 
 
