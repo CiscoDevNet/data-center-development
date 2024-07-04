@@ -94,6 +94,10 @@ cd nx-os/python_scripting_nx-os
 
 <br>
 
+## Usage
+
+<br>
+
 ### Run the scripts
 
 e.g. 
