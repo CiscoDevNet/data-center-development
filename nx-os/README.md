@@ -13,17 +13,18 @@ This is the launch page for thr NX-OS section of Data Center Development. I've i
 
 ## CML Lab Setup
 
-I'm using Cisco Modeling Labs v2.6.1 running as a VM in ProxMox. As described in the [CML section](https://github.com/xanderstevenson/data-center-development/tree/main/cml) of this repo, I have an external connectior in bridge mode with an unmanaged switch attached to it. To this unmanaged switch, I've added a NX-OS 9000 node.
+- I'm using Cisco Modeling Labs v2.6.1 running as a VM in ProxMox. As described in the [CML section](https://github.com/xanderstevenson/data-center-development/tree/main/cml) of this repo, I have an external connectior in bridge mode with an unmanaged switch attached to it. To this unmanaged switch, I've added a NX-OS 9000 node.
 
-An NX-OS node in CML requires 8GB (8192 MiB) of DRAM and 2 vCPUs
+- An NX-OS node in CML requires 8GB (8192 MiB) of DRAM and 2 vCPUs
 
 ![Alt text](https://github.com/xanderstevenson/data-center-development/blob/main/nx-os/images/nx-os_node_setup.png?raw=true)
 
 
-I've added a link from port 1 on the unmanaged switch to Ethernet1/1 on the NX-OS
+- I've added a link from port 1 on the unmanaged switch to Ethernet1/1 on the NX-OS
 
-Then, I just added these basic settings for Ethernet1/1 so I can connect with my laptop on my local 192.168.254.0 network:
+- Then, I just added these basic settings for Ethernet1/1 so I can connect with my laptop on my local 192.168.254.0 network:
 
+```
 login: admin
 password: cisco
 
@@ -38,6 +39,7 @@ interface Ethernet1/1
     ip address 192.168.254.101/24
     no shutdown
     ping 192.168.254.65
+```
 
 ```
 Nexus9k(config-if)# ping 192.168.254.65
