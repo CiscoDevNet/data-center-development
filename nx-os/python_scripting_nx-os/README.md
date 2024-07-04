@@ -6,6 +6,7 @@ If you've taken out this learning lab I created on Cisco DevNet called
 [Automating Network Tasks with Cisco NX-OS Device-Level APIs](https://developer.cisco.com/learning/labs/dne-dci-nxos-device-level-apis/introduction/), 
 you'll know that We can interact with NX-OS using Python in basically four different ways:
 
+
 1. Through the one Python version installed on the device via the Python inerpreter by typing 'python' and entering commands lin-by-line (this is the most awkward/wonky option)
 
 ```
