@@ -15,6 +15,7 @@ Here are some setting which are peculiar to CML and must be set:
 <br>
 
 **OS tab**
+<hr>
 
 - Choose 'Use CD/DVD disk image file'
 - For ISO image, choose the CML ISO you’ve uploaded to var/lib/vz/template/iso/ on your ProxMox server.
