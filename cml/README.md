@@ -33,8 +33,11 @@ I use 5
 At least 8GB (8192 MiB)
 I use 16 (16284 MiB)
 
+<br>
 
-- After that, start the CML VM, if you didn’t choose for it to automatically start. CML will walk you through the installation. You’ll choose a username and password and will probably be warned this is a standalone installation, which is fine. The only issue I had with the installation was a warning that virtualization was disabled. I knew this was not true because I already had other VMs running on ProxMox but I double checked the BIOS on my MiniPC running ProxMox. What I ended up having to do was change the ‘cpu’ name to ‘host’ on the config file for the CML VM. It was located at /etc/pve/qemu-server/102.conf If that doesn’t fix it, enabled nested virtualization on your ProxMox server.
+- After that, start the CML VM, if you didn’t choose for it to automatically start. CML will walk you through the installation. You’ll choose a username and password and will probably be warned this is a standalone installation, which is fine.
+
+- The only issue I had with the installation was a warning that virtualization was disabled. I knew this was not true because I already had other VMs running on ProxMox but I double checked the BIOS on my MiniPC running ProxMox. What I ended up having to do was change the ‘cpu’ name to ‘host’ on the config file for the CML VM. It was located at /etc/pve/qemu-server/102.conf If that doesn’t fix it, enabled nested virtualization on your ProxMox server.
 
 - Once CML loads successfully and passes all tests, you can upload the Refplat ISO through the cml-controller dashboard. This will give you access to various types of nodes and schemas. Be sure to activate your license. 
 
