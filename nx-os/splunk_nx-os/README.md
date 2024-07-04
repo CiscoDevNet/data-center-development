@@ -1,6 +1,6 @@
 # Splunk Telemetry and NX-OS
 
-<NOTE> I wasn't able to install the Splunk Universal Forwarder in Guestshell on NX-OS running on Cisco Modeling Labs due to lack of disk space <NOTE>
+> **Note:** I wasn't able to install the Splunk Universal Forwarder in neither the Guestshell nor Bash on NX-OS running on Cisco Modeling Labs due to lack of disk space. However, I wanted to share this with you in case you have a non-CML instance of NX-OS you want to add Splunk Telemtery to.
 
 Splunk is a web-based data collection, analysis, and monitoring tool. Splunk Enterprise helps
 you gain valuable operational intelligence from your machine-generated data. It comes with a
