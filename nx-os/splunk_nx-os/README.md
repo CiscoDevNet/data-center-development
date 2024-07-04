@@ -25,7 +25,21 @@ NX-OS with Splunk enables network operators to:
   
 - Install Splunk Enterprise on your control node (I installed it on my laptop)
 
-- Install the Universal Forwarder on the device running NX-OS
+- Install the Universal Forwarder on the device running NX-OS. SCP and TFTP were not working so I ran an http server in my Downloads folder on my laptop and used cURL on NX-OS to receive the file:
+
+On local device
+```
+Downloads % python3 -m http.server 8088
+Serving HTTP on :: port 8088 (http://[::]:8088/) ...
+```
+
+On NX-OS in GuestShell
+```
+curl -O http://<insert-local-ip>/splunkforwarder-<insert-you-file>.tgz
+```
+
+
+
 
 
 
