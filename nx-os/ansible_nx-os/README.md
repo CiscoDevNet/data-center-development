@@ -6,6 +6,7 @@ This section details how to use Ansible to configure and interact with a Nexus 9
 
 In the NX-OS section we discuss using Cisco Modeling Labs to host a lab with a nxos9000 node and that is what I'll be using in this section
 
+<br>
 
 ## Prerequisites
 
@@ -15,7 +16,7 @@ In the NX-OS section we discuss using Cisco Modeling Labs to host a lab with a n
 - IDE - [Visual Studio Code](https://code.visualstudio.com/Download) recommended
 - [Python](https://www.python.org/downloads/) 3.8 or higher installed (tested on Python 3.10.14 and 3.11.9)
 - Ansible installed
-
+<br>
 
 ## Environment Setup
 
