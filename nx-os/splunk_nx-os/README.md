@@ -11,11 +11,11 @@ A Splunk Enterprise infrastructure can scale to tens of thousands of remote syst
 
 NX-OS with Splunk enables network operators to:
 
-• Gain visibility into their infrastructure
-• Track detailed network inventory
-• Track power usage and temperature
-• Authenticate and audit configuration changes
-• Collect performance data from network devices
+- Gain visibility into their infrastructure
+- Track detailed network inventory
+- Track power usage and temperature
+- Authenticate and audit configuration changes
+- Collect performance data from network devices
 
 
 Download Splunk Enterprise and the Universal Forwarder here: https://www.splunk.com/en_us/download.html
