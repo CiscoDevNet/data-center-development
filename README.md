@@ -16,7 +16,7 @@ cd data-center-development
 ```
 <br>
 
-Create and activate a Python virtual environment
+### Create and activate a Python virtual environment
 
 - Mac/Linux
 ```bash
@@ -30,7 +30,7 @@ venv\Scripts\activate
 ```
 <br>
 
-Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
