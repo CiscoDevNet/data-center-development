@@ -18,7 +18,7 @@ In the NX-OS section we discuss using Cisco Modeling Labs to host a lab with a n
 
 ## Environment Setup
 
-Before diving into each section, clone the main repo and change directories to this point.
+### Before diving into each section, clone the main repo (if you haven't already done so) and change directories to this point.
 
 ```bash
 git clone https://github.com/xanderstevenson/data-center-development.git
@@ -26,7 +26,7 @@ cd data-center-development
 ```
 <br>
 
-Create and activate a Python virtual environment
+### Create and activate a Python virtual environment
 
 - Mac/Linux
 ```bash
@@ -40,25 +40,25 @@ venv\Scripts\activate
 ```
 <br>
 
-Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 <br>
 
-Change into the nx-os directory
+### Change into the nx-os directory
 
 ```bash
 cd nx-os/
 ```
 <br>
 
-Add the IP or URL of your NX-OS device to the hosts inventory file.
+### Add the IP or URL of your NX-OS device to the hosts inventory file.
 
 <br>
 
-Export the Username and Password of your NX-OS device (for CML, its admin/cisco)
+### Export the Username and Password of your NX-OS device (for CML, its admin/cisco)
 
 ```bash
 export NXOS_User=
@@ -86,7 +86,6 @@ export NXOS_Password=
     ```bash
     ansible-playbook playbooks/backup_config.yaml
     ```
-
   <br>
 
 - Name: `gather_facts.yaml`
