@@ -27,10 +27,14 @@ This is the launch page for thr NX-OS section of Data Center Development. I've i
 ```
 login: admin
 password: cisco
+```
 
+```
 terminal length 0
 no debug all
+```
 
+```
 conf t
     hostname Nexus9k
 
