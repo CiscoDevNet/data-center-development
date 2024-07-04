@@ -24,19 +24,19 @@ This is the launch page for thr NX-OS section of Data Center Development. I've i
 
 - Then, I just added these basic settings for Ethernet1/1 so I can connect with my laptop on my local 192.168.254.0 network:
 
-Credentials
+- Credentials
 ```
 login: admin
 password: cisco
 ```
 
-Useful commands I prefer
+- Useful commands I prefer
 ```
 terminal length 0
 no debug all
 ```
 
-Configure interface
+- Configure interface
 ```
 conf t
     hostname Nexus9k
@@ -48,7 +48,7 @@ interface Ethernet1/1
     ping 192.168.254.65
 ```
 
-Ping local workstation to test connectivity
+- Ping local workstation to test connectivity
 ```
 Nexus9k(config-if)# ping 192.168.254.65
 
@@ -63,16 +63,17 @@ PING 192.168.254.65 (192.168.254.65): 56 data bytes
 5 packets transmitted, 5 packets received, 0.00% packet loss
 round-trip min/avg/max = 2.86/3.625/4.895 ms
 ```
-Exit and save config
+
+- Exit and save config
 ```
     exit
 exit
 copy running-config startup-config 
 ```
 
-To confirm connectivity, you should not only be able to ping from the NX-OS node to your local network, but in the other direction as well.
+- To confirm connectivity, you should not only be able to ping from the NX-OS node to your local network, but in the other direction as well.
 
-In addition, make sure you can SSH from your local device to the NX-OS node.
+- In addition, make sure you can SSH from your local device to the NX-OS node.
 
 ```
 ssh admin@192.168.254.101
