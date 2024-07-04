@@ -69,22 +69,106 @@ export NXOS_Password=
 
 ## Playbooks
 
+- Name: `banner.yaml`
+  - Purpose: Set the Exec and MOTD banners on NX-OS
+  - How to run:
 
-- Name: banner.yaml
+    ```bash
+    ansible-playbook -i hosts playbooks/banner.yaml
+    ```
 
-- Purpose: Set the Exec and MOTD banners on NX-OS
+  <br>
 
-- How to run:
+- Name: `backup_config.yaml`
+  - Purpose: Backup the current configuration of NX-OS devices
+  - How to run:
 
-```bash
-ansible-playbook -i hosts playbooks/banner.yaml
-```
+    ```bash
+    ansible-playbook -i hosts playbooks/backup_config.yaml
+    ```
 
-- Result:
+  <br>
 
-banner image
+- Name: `gather_facts.yaml`
+  - Purpose: Gather facts from NX-OS devices
+  - How to run:
 
-<br>
+    ```bash
+    ansible-playbook -i hosts playbooks/gather_facts.yaml
+    ```
+
+  <br>
+
+- Name: `remove_configurations.yaml`
+  - Purpose: Remove all VRFs, VDCs, and VLANs configurations except the default ones on NX-OS devices
+  - How to run:
+
+    ```bash
+    ansible-playbook -i hosts playbooks/remove_configurations.yaml
+    ```
+
+  <br>
+
+- Name: `configure_vdcs.yaml`
+  - Purpose: Configure VDCs on NX-OS devices
+  - How to run:
+
+    ```bash
+    ansible-playbook -i hosts playbooks/configure_vdcs.yaml
+    ```
+
+  <br>
+
+- Name: `show_vdcs.yaml`
+  - Purpose: Show VDCs on NX-OS devices
+  - How to run:
+
+    ```bash
+    ansible-playbook -i hosts playbooks/show_vdcs.yaml
+    ```
+
+  <br>
+
+- Name: `configure_vlans.yaml`
+  - Purpose: Configure VLANs on NX-OS devices
+  - How to run:
+
+    ```bash
+    ansible-playbook -i hosts playbooks/configure_vlans.yaml
+    ```
+
+  <br>
+
+- Name: `show_vlans.yaml`
+  - Purpose: Show VLANs on NX-OS devices
+  - How to run:
+
+    ```bash
+    ansible-playbook -i hosts playbooks/show_vlans.yaml
+    ```
+
+  <br>
+
+- Name: `configure_vrfs.yaml`
+  - Purpose: Configure VRFs on NX-OS devices
+  - How to run:
+
+    ```bash
+    ansible-playbook -i hosts playbooks/configure_vrfs.yaml
+    ```
+
+  <br>
+
+- Name: `show_vrfs.yaml`
+  - Purpose: Show VRFs on NX-OS devices
+  - How to run:
+
+    ```bash
+    ansible-playbook -i hosts playbooks/show_vrfs.yaml
+    ```
+
+  <br>
+
 
 
 
