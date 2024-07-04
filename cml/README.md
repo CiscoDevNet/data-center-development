@@ -12,6 +12,7 @@ Once you have your CML license, you can go ahead and provision it as a VM in Pro
 - Within ProxMox, click ‘Create a VM’. The setting you use are pretty standard as compared to other VMs. I lef tthe default for most settings.
 
 Here are some setting which are peculiar to CML and must be set:
+
 <br>
 
 **OS tab**
@@ -24,6 +25,7 @@ Here are some setting which are peculiar to CML and must be set:
 <br>
 
 **System tab**
+<hr>
 
 - q35 for Machine
 - OVMP (UEFI) for BIOS
@@ -31,12 +33,14 @@ Here are some setting which are peculiar to CML and must be set:
 <br>
 
 **Disks tab**
+<hr>
 
 Disk size 64GB
 
 <br>
 
 **CPU tab**
+<hr>
 
 4Cores
 I use 5
@@ -44,6 +48,7 @@ I use 5
 <br>
 
 **Memory tab**
+<hr>
 
 - At least 8GB (8192 MiB)
 - I use 16 (16284 MiB)
