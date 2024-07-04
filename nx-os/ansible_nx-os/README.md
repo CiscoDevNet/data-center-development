@@ -6,7 +6,7 @@ This section details how to use Ansible to configure and interact with a Nexus 9
 
 ![image](https://github.com/xanderstevenson/data-center-development/assets/27918923/1904a965-1a41-471e-bc39-4c94dd420c9d)
 
-In the [NX-OS section(https://github.com/xanderstevenson/data-center-development/tree/main/nx-os) we discussed using Cisco Modeling Labs to host a lab with a nxos9000 node and that is what I'll be using in this section.
+In the [NX-OS section](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os) we discussed using Cisco Modeling Labs to host a lab with a nxos9000 node and that is what I'll be using in this section.
 
 <br>
 
