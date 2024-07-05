@@ -1,5 +1,5 @@
-import os
 import paramiko
+import time
 from datetime import datetime
 
 # Function to execute commands on the device
@@ -11,10 +11,7 @@ def execute_command(ssh, command):
 def capture_and_save(ssh, command, filename):
     output = execute_command(ssh, command)
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    directory = "./interfaces_routes_running-config"
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-    with open(f"{directory}/{filename}_{timestamp}.txt", 'w') as file:
+    with open(f"./interfaces_routes_running-config/{filename}_{timestamp}.txt", 'w') as file:
         file.write(output)
     print(f"Captured {filename} at {timestamp}")
 
@@ -22,16 +19,7 @@ def capture_and_save(ssh, command, filename):
 # Read credentials and device from inventory.txt
 with open('inventory.txt') as f:
     for line in f:
-        # Skip empty lines or lines starting with '#' (comments)
-        if line.strip() == '' or line.strip().startswith('#'):
-            continue
-        
-        # Attempt to split line into device, username, and password
-        try:
-            device, username, password = line.strip().split(',')
-        except ValueError:
-            print(f"Skipping line: {line.strip()} - does not match expected format")
-            continue
+        device, username, password = line.strip().split(',')
         
         # Establish SSH connection
         ssh = paramiko.SSHClient()
