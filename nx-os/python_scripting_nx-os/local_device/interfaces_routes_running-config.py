@@ -1,27 +1,14 @@
-import paramiko
+import subprocess
 from datetime import datetime
+import os
 
-# Configuration for your NX-OS device
-HOST = 'your_device_ip_or_hostname'
-USERNAME = 'your_username'
-PASSWORD = 'your_password'
-PORT = 22  # SSH port
-
-def run_cli_command_ssh(command):
+def run_cli_command(command):
     try:
-        client = paramiko.SSHClient()
-        client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        client.connect(HOST, port=PORT, username=USERNAME, password=PASSWORD, timeout=5)
-        
-        stdin, stdout, stderr = client.exec_command(command)
-        stdout_str = stdout.read().decode('utf-8')
-        stderr_str = stderr.read().decode('utf-8')
-        
-        if stderr_str:
-            raise Exception(stderr_str.strip())
-        
-        return stdout_str.strip()
-    
+        process = subprocess.Popen(f"sshpass -p '{password}' ssh {username}@{host} \"{command}\"", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        stdout, stderr = process.communicate()
+        if stderr:
+            raise Exception(stderr.decode("utf-8").strip())
+        return stdout.decode("utf-8").strip()
     except Exception as e:
         print(f"Error running CLI command '{command}': {e}")
         return None
@@ -30,30 +17,31 @@ def save_to_file(filename, data):
     try:
         with open(filename, "w") as file:
             file.write(data)
-        print(f"Saved data to {filename}")
+        print(f"Data saved to {filename}")
     except Exception as e:
-        print(f"Error saving to file {filename}: {e}")
+        print(f"Error saving data to {filename}: {e}")
 
 if __name__ == "__main__":
-    timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
+    # Read inventory.txt for host, username, and password
+    with open("inventory.txt", "r") as inventory_file:
+        host, username, password = inventory_file.read().strip().split(",")
+
+    # Create a timestamp
+    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+
+    # Create a folder to store results if it doesn't exist
     folder_name = f"interfaces_routes_running-config"
-    
-    # Example NX-OS commands
-    interface_command = "show interface brief"
-    route_command = "show ip route"
-    config_command = "show running-config"
-    
-    # Run commands via SSH
-    interface_output = run_cli_command_ssh(interface_command)
-    route_output = run_cli_command_ssh(route_command)
-    config_output = run_cli_command_ssh(config_command)
-    
-    # Save outputs to files locally
+    os.makedirs(folder_name, exist_ok=True)
+
+    # Run commands
+    interface_output = run_cli_command("show interface brief")
     if interface_output:
         save_to_file(f"{folder_name}/interfaces_{timestamp}.txt", interface_output)
-    
+
+    route_output = run_cli_command("show ip route")
     if route_output:
         save_to_file(f"{folder_name}/routes_{timestamp}.txt", route_output)
-    
+
+    config_output = run_cli_command("show running-config")
     if config_output:
         save_to_file(f"{folder_name}/running-config_{timestamp}.txt", config_output)
