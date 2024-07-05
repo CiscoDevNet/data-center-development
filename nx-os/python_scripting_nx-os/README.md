@@ -205,6 +205,36 @@ Description: When executed, the script will print the system's CPU information a
 
 <br>
 
+**2. arp_exporter_nx-os.py**
+
+Description: Export the ARP table periodically to a CSV file for easier analysis.
+<br>
+
+**3. config_backup_nx-os.py**
+
+Description: Automatically back up the running configuration to a file or remote server.
+
+<br>
+
+**4. interface_status_nx-os.py**
+
+Description: Monitor the status of network interfaces and generate alerts or logs when an interface goes down.
+
+<br>
+
+**5. inventory_nx-os.py**
+
+Description: Gather and log inventory details such as module type, serial numbers, and software versions.
+
+<br>
+
+**6. syslog_alert_nx-os.py**
+
+Description: Monitor syslog messages for specific events and send alerts.
+
+
+<br>
+
 ### Local scripts
 
 These scripts are designed to run from your local device, such as a laptop, desktop, server, or control node. Python3 must be installed in order to run them. All libraries needed to run them should be either included in the Python standard library or installed from the [requirements.txt](https://github.com/xanderstevenson/data-center-development/blob/main/requirements.txt) file found at the root of this repo, like so:
