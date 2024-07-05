@@ -243,7 +243,6 @@ These scripts are designed to run from your local device, such as a laptop, desk
 - You must create an inventory.txt file and place it in the same directory from which you will run these scripts. Here is the format of inventory.txt:
 
 ```
-# Inventory File Format: IP/URL,username,password
 192.168.254.101,admin,cisco
 ```
 
