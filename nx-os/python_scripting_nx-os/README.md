@@ -223,7 +223,7 @@ python3 example_script.py
 <br>
 <br>
 
-#### List of On-Device scripts
+#### List of Local scripts
 <hr>
 
 **1. .py**
