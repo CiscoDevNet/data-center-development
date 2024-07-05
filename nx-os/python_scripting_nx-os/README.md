@@ -1,5 +1,23 @@
 # Python Scripting for NX-OS
 
+## Menu
+
+1. [Overview](#overview)
+2. [Prerequisites](#prerequisites)
+3. [Environment Setup](#environment-setup)
+    - [Clone Repository](#clone-repository)
+    - [Create and Activate Python Virtual Environment](#create-and-activate-python-virtual-environment)
+    - [Install Dependencies](#install-dependencies)
+    - [Change into the python_scripting_nx-os Directory](#change-into-the-python_scripting_nx-os-directory)
+    - [Export Environmental Variables](#export-environmental-variables)
+4. [Usage](#usage)
+    - [On-Device Scripts](#on-device-scripts)
+        - [Different Ways to Schedule and Run On-Device Python Scripts](#different-ways-to-schedule-and-run-on-device-python-scripts)
+    - [List of On-Device Scripts](#list-of-on-device-scripts)
+    - [Local Scripts](#local-scripts)
+    - [List of Local Scripts](#list-of-local-scripts)
+
+
 ## Overview
 
 If you've taken out this learning lab I created on Cisco DevNet called 
