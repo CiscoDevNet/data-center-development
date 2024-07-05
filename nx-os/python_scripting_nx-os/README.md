@@ -295,4 +295,14 @@ python3 example_script.py
 **1. interfaces_routes_running-config.py**
 
 For each device listed in inventory.txt, it executes three commands (show interface brief, show ip route, show running-config) to gather network interface status, IP routing information, and the current running configuration. The script captures the output of each command and saves it to timestamped text files (interface_brief_YYYY-MM-DD_HH-MM-SS.txt, ip_route_YYYY-MM-DD_HH-MM-SS.txt, running_config_YYYY-MM-DD_HH-MM-SS.txt) within a directory named interfaces_routes_running-config.
+
 <br>
+
+**2. python3 automated_backup.py**
+
+This Python script automates the backup process for network devices specified in an inventory.txt file. It connects to each device using SSH, retrieves the show running-config, show log, and show version outputs, and saves them into timestamped text files within an automated_backup directory. It first reads device credentials from the inventory.txt, establishes SSH connections using Paramiko, executes the commands, captures their outputs, and organizes them neatly into labeled sections within each backup file.
+
+
+
+
+
