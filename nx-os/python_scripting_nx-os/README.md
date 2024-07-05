@@ -211,7 +211,7 @@ pip install -r requirements.txt
 ```
 <br>
 
-Then simmply navigate to your local clone of this repo and change into the directory [nx-os/python_scripting_nx-os/local_device](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/python_scripting_nx-os/local_device)
+Then simply navigate to your local clone of this repo and change into the directory [nx-os/python_scripting_nx-os/local_device](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/python_scripting_nx-os/local_device)
 
 From there, run the script of your choice like so:
 
