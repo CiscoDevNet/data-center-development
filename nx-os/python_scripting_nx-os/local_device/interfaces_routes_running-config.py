@@ -1,10 +1,10 @@
 import subprocess
-from datetime import datetime
-import os
+import re
+import datetime
 
-def run_cli_command(command):
+def run_cli_command(command, username, password):
     try:
-        process = subprocess.Popen(f"sshpass -p '{password}' ssh {username}@{host} \"{command}\"", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(f"dohost \"{command}\"", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdout, stderr = process.communicate()
         if stderr:
             raise Exception(stderr.decode("utf-8").strip())
@@ -19,29 +19,36 @@ def save_to_file(filename, data):
             file.write(data)
         print(f"Data saved to {filename}")
     except Exception as e:
-        print(f"Error saving data to {filename}: {e}")
+        print(f"Error saving to file {filename}: {e}")
 
 if __name__ == "__main__":
-    # Read inventory.txt for host, username, and password
+    # Read inventory file for host, username, password
     with open("inventory.txt", "r") as inventory_file:
         host, username, password = inventory_file.read().strip().split(",")
-
-    # Create a timestamp
-    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
-
-    # Create a folder to store results if it doesn't exist
-    folder_name = f"interfaces_routes_running-config"
-    os.makedirs(folder_name, exist_ok=True)
-
-    # Run commands
-    interface_output = run_cli_command("show interface brief")
-    if interface_output:
-        save_to_file(f"{folder_name}/interfaces_{timestamp}.txt", interface_output)
-
-    route_output = run_cli_command("show ip route")
-    if route_output:
-        save_to_file(f"{folder_name}/routes_{timestamp}.txt", route_output)
-
-    config_output = run_cli_command("show running-config")
-    if config_output:
-        save_to_file(f"{folder_name}/running-config_{timestamp}.txt", config_output)
+    
+    # Example commands
+    commands = [
+        "show interface brief",
+        "show ip route",
+        "show running-config"
+    ]
+    
+    folder_name = "interfaces_routes_running-config"
+    timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    
+    # Create folder if it doesn't exist
+    try:
+        subprocess.run(f"mkdir {folder_name}", shell=True, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error creating folder: {e}")
+    
+    for command in commands:
+        command_output = run_cli_command(command, username, password)
+        if command_output:
+            print(f"Command '{command}' output:")
+            print(command_output)
+            print("\n")
+            
+            # Save output to file with timestamp
+            filename = f"{folder_name}/interfaces_routes_running-config_{timestamp}.txt"
+            save_to_file(filename, command_output)
