@@ -238,14 +238,28 @@ Description: Monitor syslog messages for specific events and send alerts.
 
 ### Local scripts
 
-These scripts are designed to run from your local device, such as a laptop, desktop, server, or control node. Python3 must be installed in order to run them. All libraries needed to run them should be either included in the Python standard library or installed from the [requirements.txt](https://github.com/xanderstevenson/data-center-development/blob/main/requirements.txt) file found at the root of this repo, like so:
+These scripts are designed to run from your local device, such as a laptop, desktop, server, or control node. 
+
+- You must create an inventory.txt file and place it in the same directory from which you will run these scripts. Here is the format of inventory.txt:
+
+```
+# Inventory File Format: IP/URL,username,password
+192.168.254.101,admin,cisco
+```
+
+> **Important** You will want to have a .gitignore file in the same directory inventory.txt is in, which list that file, in the case you want to push the script to a GitHub repo. Including usernames/passwords in inventory files is not the best practice, but it is better than hard coding them in the script if we can at least obfuscate them with .gitignore
+
+<br>
+
+-Python3 must be installed in order to run them. All libraries needed to run them should be either included in the Python standard library or installed from the [requirements.txt](https://github.com/xanderstevenson/data-center-development/blob/main/requirements.txt) file found at the root of this repo, like so:
 
 ```bash
 pip install -r requirements.txt
 ```
 <br>
 
-Then simply navigate to your local clone of this repo and change into the directory [nx-os/python_scripting_nx-os/local_device](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/python_scripting_nx-os/local_device)
+
+- Then simply navigate to your local clone of this repo and change into the directory [nx-os/python_scripting_nx-os/local_device](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/python_scripting_nx-os/local_device)
 
 From there, run the script of your choice like so:
 
@@ -259,7 +273,7 @@ python3 example_script.py
 #### List of Local scripts
 <hr>
 
-**1. .py**
+**1. interfaces_routes_running-config.py**
 
 Description: 
 <br>
