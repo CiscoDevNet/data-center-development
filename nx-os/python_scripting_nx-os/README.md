@@ -100,7 +100,7 @@ Some of the scripts in the directory are meant to be run locally against a conne
 
 ### On-Device scripts
 
-These scripts are designed to run within the Guest Shell of a Cisco NX-OS device. Therefore, after making sure guestshell is enabled, you will enter the NX-OS GuestShell and **paste in the entire contents of the script found in this directoy --- into the /bootflash/scripts directory in the guestshell on NX-OS --- and you will then hit ENTER**. We place scripts there because that dir will be persistent across reboots of the device.
+These scripts are designed to run within the Guest Shell of a Cisco NX-OS device. Therefore, after making sure guestshell is enabled, you will enter the NX-OS GuestShell. A simple way to add the script to the NX-OS GuestShell is to **paste in the entire contents of the script found in this directoy --- into the /bootflash/scripts directory in the guestshell on NX-OS --- and you will then hit ENTER**. We place scripts there because that dir will be persistent across reboots of the device. I've included two extra lines in each script: the first line in the script contains "cat << 'EOF' >" and the name of the script and the last line will run the script. So if you want to add the script another way, you'll probably need to remove the first and last line of the on-device script.
 
 ```bash
 guestshell enable
