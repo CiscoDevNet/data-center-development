@@ -2,9 +2,9 @@ import subprocess
 import re
 import datetime
 
-def run_cli_command(command, username, password):
+def run_cli_command(command):
     try:
-        process = subprocess.Popen(f"dohost \"{command}\"", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(f"ssh {username}@{host} \"{command}\"", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdout, stderr = process.communicate()
         if stderr:
             raise Exception(stderr.decode("utf-8").strip())
@@ -40,10 +40,14 @@ if __name__ == "__main__":
     try:
         subprocess.run(f"mkdir {folder_name}", shell=True, check=True)
     except subprocess.CalledProcessError as e:
-        print(f"Error creating folder: {e}")
+        if e.returncode == 1:  # Folder already exists
+            pass
+        else:
+            print(f"Error creating folder: {e}")
+            exit(1)
     
     for command in commands:
-        command_output = run_cli_command(command, username, password)
+        command_output = run_cli_command(command)
         if command_output:
             print(f"Command '{command}' output:")
             print(command_output)
