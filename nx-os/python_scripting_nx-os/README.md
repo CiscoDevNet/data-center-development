@@ -220,5 +220,13 @@ From there, run the script of your choice like so:
 python3 example_script.py
 ```
 
+<br>
+<br>
 
+#### List of On-Device scripts
+<hr>
 
+**1. .py**
+
+Description: 
+<br>
