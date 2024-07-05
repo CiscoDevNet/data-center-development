@@ -208,6 +208,7 @@ Description: When executed, the script will print the system's CPU information a
 **2. arp_exporter_nx-os.py**
 
 Description: Export the ARP table periodically to a CSV file for easier analysis.
+
 <br>
 
 **3. config_backup_nx-os.py**
