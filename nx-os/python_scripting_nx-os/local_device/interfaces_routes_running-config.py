@@ -1,13 +1,27 @@
-import subprocess
+import paramiko
 from datetime import datetime
 
-def run_cli_command(command):
+# Configuration for your NX-OS device
+HOST = 'your_device_ip_or_hostname'
+USERNAME = 'your_username'
+PASSWORD = 'your_password'
+PORT = 22  # SSH port
+
+def run_cli_command_ssh(command):
     try:
-        process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        stdout, stderr = process.communicate()
-        if stderr:
-            raise Exception(stderr.decode("utf-8").strip())
-        return stdout.decode("utf-8").strip()
+        client = paramiko.SSHClient()
+        client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        client.connect(HOST, port=PORT, username=USERNAME, password=PASSWORD, timeout=5)
+        
+        stdin, stdout, stderr = client.exec_command(command)
+        stdout_str = stdout.read().decode('utf-8')
+        stderr_str = stderr.read().decode('utf-8')
+        
+        if stderr_str:
+            raise Exception(stderr_str.strip())
+        
+        return stdout_str.strip()
+    
     except Exception as e:
         print(f"Error running CLI command '{command}': {e}")
         return None
@@ -24,16 +38,16 @@ if __name__ == "__main__":
     timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
     folder_name = f"interfaces_routes_running-config"
     
-    # Example commands, replace with actual commands for your devices
+    # Example NX-OS commands
     interface_command = "show interface brief"
     route_command = "show ip route"
     config_command = "show running-config"
-
-    # Run commands
-    interface_output = run_cli_command(interface_command)
-    route_output = run_cli_command(route_command)
-    config_output = run_cli_command(config_command)
-
+    
+    # Run commands via SSH
+    interface_output = run_cli_command_ssh(interface_command)
+    route_output = run_cli_command_ssh(route_command)
+    config_output = run_cli_command_ssh(config_command)
+    
     # Save outputs to files locally
     if interface_output:
         save_to_file(f"{folder_name}/interfaces_{timestamp}.txt", interface_output)
