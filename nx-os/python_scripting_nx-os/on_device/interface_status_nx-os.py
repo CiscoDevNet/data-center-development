@@ -1,4 +1,6 @@
 import subprocess
+import os
+from datetime import datetime
 
 def run_cli_command(command):
     try:
@@ -12,9 +14,14 @@ def run_cli_command(command):
         return None
 
 if __name__ == "__main__":
+    # Ensure the directory exists
+    log_dir = "/bootflash/scripts/interface-status-log"
+    os.makedirs(log_dir, exist_ok=True)
+
     interfaces = run_cli_command("show interface brief")
     if interfaces:
-        print("Interface Status:")
-        print(interfaces)
-        with open("/bootflash/scripts/interface_status.log", "a") as log_file:
+        log_file_path = os.path.join(log_dir, "interface_status.log")
+        with open(log_file_path, "a") as log_file:
+            log_file.write(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
             log_file.write(f"{interfaces}\n")
+            log_file.write("="*80 + "\n")
