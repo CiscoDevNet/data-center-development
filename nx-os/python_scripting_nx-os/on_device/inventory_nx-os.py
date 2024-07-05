@@ -1,4 +1,6 @@
 import subprocess
+import os
+from datetime import datetime
 
 def run_cli_command(command):
     try:
@@ -12,9 +14,14 @@ def run_cli_command(command):
         return None
 
 if __name__ == "__main__":
+    # Ensure the directory exists
+    log_dir = "/bootflash/scripts/inventory-logs"
+    os.makedirs(log_dir, exist_ok=True)
+
     inventory = run_cli_command("show inventory")
     if inventory:
-        print("Device Inventory:")
-        print(inventory)
-        with open("/bootflash/scripts/inventory_log.txt", "a") as log_file:
+        log_file_path = os.path.join(log_dir, "inventory_log.txt")
+        with open(log_file_path, "a") as log_file:
+            log_file.write(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
             log_file.write(f"{inventory}\n")
+            log_file.write("="*80 + "\n")
