@@ -100,7 +100,7 @@ Some of the scripts in the directory are meant to be run locally against a conne
 
 ### On-Device scripts
 
-These devices are designed to run within the Guest Shell of a Cisco NX-OS device. Therefore, after making sure guestshell is enabled, you will enter the NX-OS GuestShell and **paste in the entire contents of the script found in this directoy --- into the /bootflash/scripts directory in the guestshell on NX-OS --- and you will then hit ENTER**. We place scripts there because that dir will be persistent across reboots of the device.
+These scripts are designed to run within the Guest Shell of a Cisco NX-OS device. Therefore, after making sure guestshell is enabled, you will enter the NX-OS GuestShell and **paste in the entire contents of the script found in this directoy --- into the /bootflash/scripts directory in the guestshell on NX-OS --- and you will then hit ENTER**. We place scripts there because that dir will be persistent across reboots of the device.
 
 ```bash
 guestshell enable
@@ -199,6 +199,25 @@ Each method has its own use case, whether you need the script to run locally wit
 **1. nxos_resources.py**
 
 Description: When executed, the script will print the system's CPU information and the top 10 processes by memory usage. The output is formatted with separators for better readability.
+
+<br>
+
+### Local scripts
+
+These scripts are designed to run from your local device, such as a laptop, desktop, server, or control node. Python3 must be installed in order to run them. All libraries needed to run them should be either included in the Python standard library or installed from the [requirements.txt](https://github.com/xanderstevenson/data-center-development/blob/main/requirements.txt) file found at the root of this repo, like so:
+
+```bash
+pip install -r requirements.txt
+```
+<br>
+
+Then simmply navigate to your local clone of this repo and change into the directory [nx-os/python_scripting_nx-os/local_device](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/python_scripting_nx-os/local_device)
+
+From there, run the script of your choice like so:
+
+```bash
+python3 example_script.py
+```
 
 
 
