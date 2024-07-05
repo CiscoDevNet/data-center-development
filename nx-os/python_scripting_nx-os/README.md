@@ -195,6 +195,7 @@ Each method has its own use case, whether you need the script to run locally wit
 <br>
 
 #### List of On-Device scripts
+<hr>
 
 **1. nxos_resources.py**
 
