@@ -4,7 +4,7 @@ import datetime
 
 def run_cli_command(command):
     try:
-        process = subprocess.Popen(f"ssh {username}@{host} \"{command}\"", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(f"ssh -i ~/.ssh/id_rsa {username}@{host} \"{command}\"", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdout, stderr = process.communicate()
         if stderr:
             raise Exception(stderr.decode("utf-8").strip())
