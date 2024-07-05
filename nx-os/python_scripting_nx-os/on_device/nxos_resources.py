@@ -1,4 +1,3 @@
-cat << 'EOF' > nxos_resources.py
 import subprocess
 
 def run_cli_command(command):
@@ -34,4 +33,3 @@ if __name__ == "__main__":
     print(top_processes)
     print("="*40)
 EOF
-python3 nxos_resources.py
