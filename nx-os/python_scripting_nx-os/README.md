@@ -274,5 +274,5 @@ python3 example_script.py
 
 **1. interfaces_routes_running-config.py**
 
-Description: 
+Description: For each device listed in inventory.txt, it executes three commands (show interface brief, show ip route, show running-config) to gather network interface status, IP routing information, and the current running configuration. The script captures the output of each command and saves it to timestamped text files (interface_brief_YYYY-MM-DD_HH-MM-SS.txt, ip_route_YYYY-MM-DD_HH-MM-SS.txt, running_config_YYYY-MM-DD_HH-MM-SS.txt) within a directory named interfaces_routes_running-config.
 <br>
