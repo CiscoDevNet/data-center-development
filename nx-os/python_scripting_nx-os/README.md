@@ -298,7 +298,7 @@ For each device listed in inventory.txt, it executes three commands (show interf
 
 <br>
 
-**2. python3 automated_backup.py**
+**2. automated_backup.py**
 
 This Python script automates the backup process for network devices specified in an inventory.txt file. It connects to each device using SSH, retrieves the show running-config, show log, and show version outputs, and saves them into timestamped text files within an automated_backup directory. It first reads device credentials from the inventory.txt, establishes SSH connections using Paramiko, executes the commands, captures their outputs, and organizes them neatly into labeled sections within each backup file.
 
