@@ -201,37 +201,37 @@ Each method has its own use case, whether you need the script to run locally wit
 
 **1. nxos_resources.py**
 
-Description: When executed, the script will print the system's CPU information and the top 10 processes by memory usage. The output is formatted with separators for better readability.
+When executed, the script will print the system's CPU information and the top 10 processes by memory usage. The output is formatted with separators for better readability.
 
 <br>
 
 **2. arp_exporter_nx-os.py**
 
-Description: Export the ARP table periodically to a CSV file for easier analysis.
+Export the ARP table periodically to a CSV file for easier analysis.
 
 <br>
 
 **3. config_backup_nx-os.py**
 
-Description: Automatically back up the running configuration to a file or remote server.
+Automatically back up the running configuration to a file or remote server.
 
 <br>
 
 **4. interface_status_nx-os.py**
 
-Description: Monitor the status of network interfaces and generate alerts or logs when an interface goes down.
+Monitor the status of network interfaces and generate alerts or logs when an interface goes down.
 
 <br>
 
 **5. inventory_nx-os.py**
 
-Description: Gather and log inventory details such as module type, serial numbers, and software versions.
+Gather and log inventory details such as module type, serial numbers, and software versions.
 
 <br>
 
 **6. syslog_alert_nx-os.py**
 
-Description: Monitor syslog messages for specific events and send alerts.
+Monitor syslog messages for specific events and send alerts.
 
 
 <br>
@@ -274,5 +274,5 @@ python3 example_script.py
 
 **1. interfaces_routes_running-config.py**
 
-Description: For each device listed in inventory.txt, it executes three commands (show interface brief, show ip route, show running-config) to gather network interface status, IP routing information, and the current running configuration. The script captures the output of each command and saves it to timestamped text files (interface_brief_YYYY-MM-DD_HH-MM-SS.txt, ip_route_YYYY-MM-DD_HH-MM-SS.txt, running_config_YYYY-MM-DD_HH-MM-SS.txt) within a directory named interfaces_routes_running-config.
+For each device listed in inventory.txt, it executes three commands (show interface brief, show ip route, show running-config) to gather network interface status, IP routing information, and the current running configuration. The script captures the output of each command and saves it to timestamped text files (interface_brief_YYYY-MM-DD_HH-MM-SS.txt, ip_route_YYYY-MM-DD_HH-MM-SS.txt, running_config_YYYY-MM-DD_HH-MM-SS.txt) within a directory named interfaces_routes_running-config.
 <br>
