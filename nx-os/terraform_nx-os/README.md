@@ -91,7 +91,7 @@ After applying the configuration, you can verify the changes on your NX-OS devic
 
 ## Terraform Plans: 
 
-**1. [vlans](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os/vlans)**
+**1. [create-interfaces](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os/create-interfaces)**
 
 In this Terraform plan, we we configure and stand up the first three available Ethernet interfaces. We also create three VLANS with names corresponding to the three interfaces. Each new interface is assigned to the corresponding new VLAN.
 
