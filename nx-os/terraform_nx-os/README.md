@@ -4,12 +4,6 @@
 
 1. [Introduction](#introduction)
 2. [Usage](#usage)
-    1. [Configure the NX-OS Device](#configure-the-nx-os-device)
-    2. [Install Terraform](#install-terraform)
-    3. [Create a Terraform Configuration](#create-a-terraform-configuration)
-    4. [Initialize Terraform](#initialize-terraform)
-    5. [Plan and Apply the Configuration](#plan-and-apply-the-configuration)
-    6. [Verify the Configuration](#verify-the-configuration)
 3. [Terraform Plans](#terraform-plans)
 
 ## Introduction
