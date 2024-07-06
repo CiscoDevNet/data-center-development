@@ -95,3 +95,9 @@ After applying the configuration, you can verify the changes on your NX-OS devic
 
 In this Terraform plan, we we configure and stand up the first three available Ethernet interfaces. We also create three VLANS with names corresponding to the three interfaces. Each new interface is assigned to the corresponding new VLAN.
 
+<br>
+
+## Resources
+
+[nxos Terraform provider](https://registry.terraform.io/providers/CiscoDevNet/nxos/latest)
+
