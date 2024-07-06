@@ -1,3 +1,32 @@
+# Guide to Managing Cisco NX-OS with Terraform
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Configure the NX-OS Device](#1-configure-the-nx-os-device)
+3. [Install Terraform](#2-install-terraform)
+4. [Create a Terraform Configuration](#3-create-a-terraform-configuration)
+5. [Setup Variables and Sensitive Information](#4-setup-variables-and-sensitive-information)
+6. [Initialize Terraform](#5-initialize-terraform)
+7. [Plan and Apply the Configuration](#6-plan-and-apply-the-configuration)
+8. [Verify the Configuration](#7-verify-the-configuration)
+9. [Using .gitignore](#8-using-gitignore)
+10. [Conclusion](#conclusion)
+
+## Introduction
+
+In this guide, we will set up and manage network infrastructure on Cisco NX-OS devices using Terraform. We will cover the following steps:
+
+1. Configuring the NX-OS device to enable the NX-API feature.
+2. Installing Terraform on your local machine.
+3. Creating a Terraform configuration file (`main.tf`) to manage interfaces and VLANs on the NX-OS device.
+4. Using a `.gitignore` file to exclude sensitive information and unnecessary files from version control.
+5. Using a `terraform.tfvars` file to manage variables securely.
+6. Initializing, planning, and applying the Terraform configuration.
+7. Verifying the configuration on the NX-OS device.
+
+
+## Usage
 
 1. Configure the NX-OS Device
 Ensure the NX-OS device has the NX-API feature enabled. You can do this with the following command on your NX-OS device:
@@ -65,3 +94,10 @@ terraform apply
 
 6. Verify the Configuration
 After applying the configuration, you can verify the changes on your NX-OS device to ensure they have been correctly applied.
+
+## Terraform Plans: 
+
+**1. [vlans](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os/vlans)**
+
+In this Terraform plan, we we configure and stand up the first three available Ethernet interfaces. We also create three VLANS with names corresponding to the three interfaces. Each new interface is assigned to the corresponding new VLAN.
+
