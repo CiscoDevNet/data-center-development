@@ -93,7 +93,36 @@ After applying the configuration, you can verify the changes on your NX-OS devic
 
 **1. [create-interfaces](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os/create-interfaces)**
 
-In this Terraform plan, we we configure and stand up the first three available Ethernet interfaces. We also create three VLANS with names corresponding to the three interfaces. Each new interface is assigned to the corresponding new VLAN.
+In this Terraform plan, we configure three Ethernet interfaces with IP addresses and set the administrative state to up.
+
+```
+Apply complete! Resources: 3 added, 3 changed, 0 destroyed.
+```
+
+Before:
+
+```
+Nexus9k(config)# sh ip int br
+
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Eth1/1               192.168.254.101 protocol-up/link-up/admin-up
+```
+
+
+After:
+
+```
+Nexus9k(config)# sh ip int br
+
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Eth1/1               192.168.254.101 protocol-up/link-up/admin-up       
+Eth1/7               192.168.247.107 protocol-down/link-down/admin-up   
+Eth1/8               192.168.248.108 protocol-down/link-down/admin-up   
+Eth1/9               192.168.249.109 protocol-down/link-down/admin-up   
+Nexus9k(config)# sh ip int br
+```
 
 <br>
 
