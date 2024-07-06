@@ -124,6 +124,9 @@ Eth1/9               192.168.249.109 protocol-down/link-down/admin-up
 Nexus9k(config)# sh ip int br
 ```
 
+In addition, running **terraform destroy** will remove those three interfaces.
+
+
 <br>
 
 ## Resources
