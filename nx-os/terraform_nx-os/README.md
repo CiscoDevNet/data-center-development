@@ -60,6 +60,8 @@ After applying the configuration, you can verify the changes on your NX-OS devic
 
 In this Terraform plan, we configure three Ethernet interfaces with IP addresses and set the administrative state to up.
 
+> Note: sometimes I have to run *terraform apply* twice for all three interfaces to be created. Not sure why.
+
 ```
 Apply complete! Resources: 3 added, 3 changed, 0 destroyed.
 ```
