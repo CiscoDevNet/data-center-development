@@ -97,7 +97,7 @@ In addition, running **terraform destroy** will remove those three interfaces.
 <br>
 
 
-**1. [create-interfaces](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os/create-vlans)**
+**2. [create-vlans](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os/create-vlans)**
 
 This Terraform configuration sets up VLAN interfaces (SVIs) on Cisco NX-OS devices using the CiscoDevNet/nxos provider version 0.5.3. It defines three VLAN interfaces (vlan107, vlan108, and vlan109) with associated SVI (Switched Virtual Interface) configurations, including administrative state, bandwidth, delay, description, medium type, and MTU settings. Each SVI is configured to operate within the default VRF (Virtual Routing and Forwarding) instance (sys/inst-default). Additionally, IPv4 configurations for these interfaces ensure specific behavior such as disabled drop_glean, forwarding, and URPF (Unicast Reverse Path Forwarding). Dependencies between these resources are established to ensure proper provisioning order, adhering to best practices for network infrastructure automation.
 
