@@ -9,10 +9,22 @@ The code in these directories was primarily tested against labs in Cisco Modelin
 
 <br>
 
+### Table of Directories
+
+- **[Cisco Modeling Labs (CML)](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/ansible_nx-os)** - How to install CML. Each section also contains info about how to using CML for the tools in that section.
+
+- [Automating NX-OS with Python Scripting](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/python_scripting_nx-os)
+
+- [Automating NX-OS with Terraform](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os)
+
+- [Splunk Telemetry and NX-OS](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/splunk_nx-os)
+
+<br>
+
 
 ## Installation
 
-Before diving into each section, clone the main repo (if you haven't already done so).
+Clone the main repo (if you haven't already done so).
 
 ```bash
 git clone https://github.com/xanderstevenson/data-center-development.git
