@@ -22,6 +22,7 @@ In this guide, we will set up and manage network infrastructure on Cisco NX-OS d
 ## Usage
 
 1. Configure the NX-OS Device
+   
 Ensure the NX-OS device has the NX-API feature enabled. You can do this with the following command on your NX-OS device:
 
 ```
@@ -32,17 +33,34 @@ feature nxapi
 
 
 3. Install Terraform
+   
 Download and install Terraform from the Terraform website.
 
 
-4. Initialize Terraform
+4. Create terraform.vars
+
+Each child directory will need a terraform.vars file to be created and populated as suc:
+
+```
+nxos_username = "<add_your_username>"
+nxos_password = "<add_your_password>"
+nxos_url      = "<add_your_URL_and-or_IP>"
+nxos_insecure = true
+```
+
+< This file is not added to the GitHub repo because it's listed in the .gitignore at the root of this repo.
+
+
+5. Initialize Terraform
+   
 Run the following command to initialize Terraform and download the provider plugins:
 
 ```
 terraform init
 ```
 
-5. Plan and Apply the Configuration
+6. Plan and Apply the Configuration
+   
 Run the following commands to see the execution plan and apply the configuration:
 
 ```
@@ -50,9 +68,11 @@ terraform plan
 terraform apply
 ```
 
-6. Verify the Configuration
+7. Verify the Configuration
+   
 After applying the configuration, you can verify the changes on your NX-OS device to ensure they have been correctly applied.
 
+<br>
 
 ## Terraform Plans: 
 
