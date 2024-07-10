@@ -1,5 +1,17 @@
 # NX-OS Data Center Development
 
+
+### Table of Directories
+
+- [Automating NX-OS with Ansible](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/ansible_nx-os)
+
+- [Automating NX-OS with Python Scripting](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/python_scripting_nx-os)
+
+- [Automating NX-OS with Terraform](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os)
+
+- [Splunk Telemetry and NX-OS](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/splunk_nx-os)
+
+
 ## Overview 
 
 This is the launch page for thr NX-OS section of Data Center Development. I've included the prerequisites and a CML Lab Setup section below to get you started before you explore the labs and their directories in this repo.
@@ -11,11 +23,11 @@ This is the launch page for thr NX-OS section of Data Center Development. I've i
 
 ## Prerequisites
 
-- You should have an enviornment with an NX-OS 9000-series switch running NX-OS.
+- You should have an enviornment with an NX-OS 9000-series switch running NX-OS. I'm using Cisco Modeling Labs v 2.6.1
 - An IDE (e.g. VS Code)
 
 
-## Lab Setup: a an NX-OS Node in CML
+## Lab Setup: adding an NX-OS 9000 node in Cisco Modeling Labs
 
 - I'm using Cisco Modeling Labs v2.6.1 running as a VM in ProxMox. As described in the [CML section](https://github.com/xanderstevenson/data-center-development/tree/main/cml) of this repo, I have an external connectior in bridge mode with an unmanaged switch attached to it. To this unmanaged switch, I've added a NX-OS 9000 node.
 
