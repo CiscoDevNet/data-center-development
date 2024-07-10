@@ -29,13 +29,17 @@ Ensure the NX-OS device has the NX-API feature enabled. You can do this with the
 feature nxapi
 ```
 
+<br>
+
 2. Make sure you've cloned this repo, installed the dependencies from requirments.txt and changed into the directory which contains the Terraform configuration you want to apply.
 
+<br>
 
 3. Install Terraform
    
 Download and install Terraform from the Terraform website.
 
+<br>
 
 4. Create terraform.vars
 
@@ -50,6 +54,7 @@ nxos_insecure = true
 
 **Note** This file is not added to the GitHub repo because it's listed in the .gitignore at the root of this repo.
 
+<br>
 
 5. Initialize Terraform
    
@@ -59,6 +64,8 @@ Run the following command to initialize Terraform and download the provider plug
 terraform init
 ```
 
+<br>
+
 6. Plan and Apply the Configuration
    
 Run the following commands to see the execution plan and apply the configuration:
@@ -67,6 +74,8 @@ Run the following commands to see the execution plan and apply the configuration
 terraform plan
 terraform apply
 ```
+
+<br>
 
 7. Verify the Configuration
    
