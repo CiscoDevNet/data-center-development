@@ -13,7 +13,7 @@ The code in these directories was primarily tested against labs in Cisco Modelin
 
 - [Cisco Modeling Labs (CML)](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/ansible_nx-os) - How to install CML. Each section also contains info about how to using CML for the tools in that section.
 
-- [Proxmox Setup Guide]([https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/python_scripting_nx-os)(https://github.com/xanderstevenson/data-center-development/edit/main/proxmox/README.md): This guide will help you set up Proxmox on both a laptop and a MiniPC. We also cover steps for Mac, Windows, and Linux.
+- [Proxmox Setup Guide](https://github.com/xanderstevenson/data-center-development/edit/main/proxmox/README.md): This guide will help you set up Proxmox on both a laptop and a MiniPC. We also cover steps for Mac, Windows, and Linux.
 
 - [NX-OS](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os): NX-OS Data Center Development. We have sections for automating NX-OS with Ansible, Python Scripting, and Terraform, as well as how to use Splunk Telemetry with NX-OS.
 
