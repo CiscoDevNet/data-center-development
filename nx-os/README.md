@@ -11,6 +11,7 @@
 
 - [Splunk Telemetry and NX-OS](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/splunk_nx-os)
 
+<br>
 
 ## Overview 
 
@@ -20,12 +21,14 @@ This is the launch page for thr NX-OS section of Data Center Development. I've i
 
 > **Note**: Additionally, for more of a deep-dive into all things related to NX-OS development, be sure to read. [Programmability and Automation with Cisco Open NX-OS](https://www.cisco.com/c/dam/en/us/td/docs/switches/datacenter/nexus9000/sw/open_nxos/programmability/guide/Programmability_Open_NX-OS.pdf) from Cisco.
 
+<br>
 
 ## Prerequisites
 
 - You should have an enviornment with an NX-OS 9000-series switch running NX-OS. I'm using Cisco Modeling Labs v 2.6.1
 - An IDE (e.g. VS Code)
 
+<br>
 
 ## Lab Setup: adding an NX-OS 9000 node in Cisco Modeling Labs
 
@@ -113,6 +116,8 @@ http://www.gnu.org/licenses/lgpl.html
 
 Nexus9k# 
 ```
+
+<br>
 
 ## Next Steps
 
