@@ -48,7 +48,7 @@ nxos_url      = "<add_your_URL_and-or_IP>"
 nxos_insecure = true
 ```
 
-< This file is not added to the GitHub repo because it's listed in the .gitignore at the root of this repo.
+**Note** This file is not added to the GitHub repo because it's listed in the .gitignore at the root of this repo.
 
 
 5. Initialize Terraform
