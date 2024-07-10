@@ -1,4 +1,4 @@
-# Guide to Managing Cisco NX-OS with Terraform
+# Managing Cisco NX-OS with Terraform
 
 ## Table of Contents
 
