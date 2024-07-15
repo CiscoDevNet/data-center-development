@@ -27,8 +27,8 @@ This is the launch page for thr ACI section of Data Center Development. For ACI,
 
 - Navigate to [APIC](https://devnetsandbox.cisco.com/DevNet/catalog/ACI-Simulator-Always-On_aci-simulator-always-on) and login with the following credentials:
 
-admin
-!v3G@!4@Y
+**admin**<br>
+**!v3G@!4@Y**
 
 <br>
 
