@@ -9,7 +9,7 @@
 
 ## Overview 
 
-This is the launch page for thr ACI section of Data Center Development. For ACI, we will be utilizing the [ACI Simulator Always-On sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/Open-NX-OS-Programmability_open-nx-os)(https://devnetsandbox.cisco.com/DevNet/catalog/ACI-Simulator-Always-On_aci-simulator-always-on) from Cisco DevNet. In addition, DevNet also offers a *Reservable* [ACI Simulator 6.0 sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/aci-simulator-sandbox_aci-simulator), although we don not make use of it in this repo.
+This is the launch page for thr ACI section of Data Center Development. For ACI, we will be utilizing the [ACI Simulator Always-On sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/Open-NX-OS-Programmability_open-nx-os) from Cisco DevNet. In addition, DevNet also offers a *Reservable* [ACI Simulator 6.0 sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/aci-simulator-sandbox_aci-simulator), although we don not make use of it in this repo.
 
 > **Note**: If you want to learn more about ACI, check out these [FREE ACI Learning Labs](https://developer.cisco.com/learning/search/?categories=Data%20Center&contentType=track,module,lab&page=1&products=ACI) from DevNet.
 
