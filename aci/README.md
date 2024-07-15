@@ -7,9 +7,9 @@ Welcome to the ACI portion of the Data Center Development repository! This secti
 ## Table of Contents
 
 - [ansible_aci](./ansible_aci/): Directory for Ansible playbooks and roles specific to ACI automation.
-- 
+  
 - [mso_aci](./mso_aci/): Scripts and documentation related to Cisco Multi-Site Orchestrator (MSO) for ACI.
-- 
+  
 - [nexus_dashboard](./nexus_dashboard/):
   - [ansible_nexus_dashboard](./nexus_dashboard/ansible_nexus_dashboard/): Ansible playbooks for Nexus Dashboard automation.
   - [ndfc](./nexus_dashboard/ndfc/): Scripts and documentation for Nexus Dashboard Fabric Controller (NDFC).
