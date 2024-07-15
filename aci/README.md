@@ -13,7 +13,7 @@ This is the launch page for thr ACI section of Data Center Development. For ACI,
 
 Here is the infrastructure of the sandbox:
 
-![image](https://github.com/user-attachments/assets/64993d8c-b1ae-4903-828b-8cd4d257b7ec)
+![image](https://github.com/user-attachments/assets/ec42f2eb-93ab-4b30-9fa2-0173e5802605)
 
 
 
