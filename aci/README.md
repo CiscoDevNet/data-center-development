@@ -13,7 +13,8 @@ This is the launch page for thr ACI section of Data Center Development. For ACI,
 
 Here is the infrastructure of the sandbox:
 
-![image](https://github.com/user-attachments/assets/f37f853c-e9ba-46d2-88d6-0909c31aac6d)
+![image](https://github.com/user-attachments/assets/64993d8c-b1ae-4903-828b-8cd4d257b7ec)
+
 
 
 In addition, DevNet also offers a *Reservable* [ACI Simulator 6.0 sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/aci-simulator-sandbox_aci-simulator), although we don not make use of it in this repo.
