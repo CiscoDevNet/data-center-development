@@ -17,7 +17,7 @@
 
 This is the launch page for thr NX-OS section of Data Center Development. I've included the prerequisites and a CML Lab Setup section below to get you started before you explore the labs and their directories in this repo.
 
-> **Note**: If you want a good primer on NX-OS *interfaces* (NX-CLI, NXAPI_CLI, NXAPI_REST) and *tools* (BASH, GuestShell, NXAPI-Sandbox) check out this learninglab I created on Cisco DevNet called [Automating Network Tasks with Cisco NX-OS Device-Level APIs](https://developer.cisco.com/learning/labs/dne-dci-nxos-device-level-apis/introduction/).
+> **Note**: If you want a good primer on NX-OS *interfaces* (NX-CLI, NXAPI_CLI, NXAPI_REST) and *tools* (BASH, GuestShell, NXAPI-Sandbox) check out this learninglab I created on Cisco DevNet called [Automating Network Tasks with Cisco NX-OS Device-Level APIs](https://developer.cisco.com/learning/labs/dne-dci-nxos-device-level-apis/introduction/). This Lab interacts with the [Open NX-OS Programmability AlwaysOn sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/Open-NX-OS-Programmability_open-nx-os) from DevNet.
 
 > **Note**: Additionally, for more of a deep-dive into all things related to NX-OS development, be sure to read. [Programmability and Automation with Cisco Open NX-OS](https://www.cisco.com/c/dam/en/us/td/docs/switches/datacenter/nexus9000/sw/open_nxos/programmability/guide/Programmability_Open_NX-OS.pdf) from Cisco.
 
