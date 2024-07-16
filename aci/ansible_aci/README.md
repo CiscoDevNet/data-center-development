@@ -49,7 +49,7 @@ ansible_password: !v3G@!4@Y
 If you want to edit the vault file later, use the ansible-vault edit command:
 
 ```bash
-ansible-vault edit vault.yml
+ansible-vault edit vault.yaml
 ```
 
 
