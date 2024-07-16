@@ -67,15 +67,22 @@ ansible-playbook -i inventory.yml playbook.yaml --ask-vault-pass
 
 ## Playbooks
 
+<br>
+
 1. **gather_aci_facts.yaml**
 
 This playbook automates the process of logging into the Cisco ACI controller, obtaining an authentication token, and then retrieving infor about the fabric nodes.
+
+<br>
 
 - How to run the playbook (from data-center-development/aci/ansible_aci)
 
 ```bash
 ansible-playbook -i hosts playbooks/gather_aci_facts.yaml --ask-vault-pass
 ```
+
+<br>
+
 
 - Results (truncated for brevity)
   
