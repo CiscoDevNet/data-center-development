@@ -80,8 +80,8 @@ ansible-playbook -i hosts playbooks/gather_aci_facts.yaml --ask-vault-pass
 - Results (truncated for brevity)
   
 <center>
-  <div>
-  <img src="https://github.com/user-attachments/assets/a49ef5ca-ec0f-458f-9070-c316bba38626" alt="Image" width="70%" style="align-content:center">
-  </div>
+    <div style="display: inline-block; text-align: center;">
+        <img src="https://github.com/user-attachments/assets/a49ef5ca-ec0f-458f-9070-c316bba38626" alt="Image" width="60%">
+    </div>
 </center>
 
