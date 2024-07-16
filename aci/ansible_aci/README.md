@@ -42,7 +42,7 @@ Here's what mine looks like for the ACI Simulator Always-On sandbox:
 
 ```bash
 ansible_user: admin
-ansible_password: !v3G@!4@Y
+ansible_password: '!v3G@!4@Y'
 
 ```
 
@@ -62,5 +62,23 @@ Because we added our credentials to Ansible Vault during the installation, we sh
 ```bash
 ansible-playbook -i inventory.yml playbook.yaml --ask-vault-pass
 ```
+
+<br>
+
+## Playbooks
+
+1. **gather_aci_facts.yaml**
+
+This playbook automates the process of logging into the Cisco ACI controller, obtaining an authentication token, and then retrieving infor about the fabric nodes.
+
+- How to run the playbook (from data-center-development/aci/ansible_aci)
+
+```bash
+ansible-playbook -i hosts playbooks/gather_aci_facts.yaml --ask-vault-pass
+```
+
+- Results (truncated for brevity)
+
+![image](https://github.com/user-attachments/assets/a49ef5ca-ec0f-458f-9070-c316bba38626)
 
 
