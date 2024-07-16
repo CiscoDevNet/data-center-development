@@ -60,7 +60,7 @@ ansible-vault edit vault.yaml
 Because we added our credentials to Ansible Vault during the installation, we should be sure to invoke the vault when running our playbooks, for example:
 
 ```bash
-ansible-playbook -i inventory.yml playbook.yml --ask-vault-pass
+ansible-playbook -i inventory.yml playbook.yaml --ask-vault-pass
 ```
 
 
