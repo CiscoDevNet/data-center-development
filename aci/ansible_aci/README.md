@@ -78,7 +78,8 @@ ansible-playbook -i hosts playbooks/gather_aci_facts.yaml --ask-vault-pass
 ```
 
 - Results (truncated for brevity)
+- 
+<center>
+  <img src="https://github.com/user-attachments/assets/a49ef5ca-ec0f-458f-9070-c316bba38626" alt="Image" width="70%">
+</center>
 
-![image](https://github.com/user-attachments/assets/a49ef5ca-ec0f-458f-9070-c316bba38626)
-
-<img src="https://github.com/user-attachments/assets/a49ef5ca-ec0f-458f-9070-c316bba38626" alt="Image" width="50%">
