@@ -1,0 +1,40 @@
+---
+- name: Gather ACI Facts
+  hosts: sandboxapicdc
+  gather_facts: false
+
+  tasks:
+
+    - name: Get Access Token
+      uri:
+        url: "https://{{ ansible_host }}/api/aaaLogin.json"
+        method: POST
+        body_format: json
+        body:
+          aaaUser:
+            attributes:
+              name: "admin"
+              pwd: "!v3G@!4@Y"
+        validate_certs: no
+        status_code: 200
+        return_content: yes
+      register: login_response
+
+    - name: Extract Token
+      set_fact:
+        token: "{{ login_response.json.imdata[0].aaaLogin.attributes.token }}"
+
+    - name: Gather Fabric Information
+      uri:
+        url: "https://{{ ansible_host }}/api/node/class/fabricNode.json"
+        method: GET
+        headers:
+          Cookie: "APIC-cookie={{ token }}"
+        validate_certs: no
+        status_code: 200
+        return_content: yes
+      register: fabric_response
+
+    - name: Print gathered facts
+      debug:
+        var: fabric_response.json

@@ -1,0 +1,10 @@
+all:
+  hosts:
+    sandboxapicdc:
+      ansible_host: sandboxapicdc.cisco.com
+      ansible_connection: httpapi
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
+      ansible_network_os: cisco.aci.aci
+  # vars_files:
+  #   - vault.yaml
