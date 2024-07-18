@@ -2,7 +2,6 @@ import intersight
 import re
 import sys
 import os
-from authenticate import get_api_client
 
 
 def get_api_client(
@@ -59,21 +58,8 @@ def get_api_client(
             ],
         ),
     )
-    # if you want to turn off certificate verification
-    # configuration.verify_ssl = False
 
     api_client = intersight.ApiClient(configuration)
     print("API client created successfully")
     print(api_client)
     return api_client
-
-
-# Example usage
-api_key = os.getenv("intersight_api_key")
-api_key_file = os.getenv("intersight_api_key_file")
-
-if api_key and api_key_file:
-    client = get_api_client(api_key, api_secret_file=api_key_file)
-else:
-    print("Environment variables for API key and key file are not set")
-    sys.exit(1)
