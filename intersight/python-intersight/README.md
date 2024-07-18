@@ -28,7 +28,7 @@ API client created successfully
 <intersight.api_client.ApiClient object at 0x109040410>
 ```
 
-## 2. Obtain a list of Boot Policies
+### 2. Obtain a list of Boot Policies
 
 ```bash
 python3 get_boot_policies.py
