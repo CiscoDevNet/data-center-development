@@ -13,8 +13,6 @@
 
 ### 1. Authenticate
 
-Run the Authentiction
-
 ```bash
 python3 authenticate.py
 ```
