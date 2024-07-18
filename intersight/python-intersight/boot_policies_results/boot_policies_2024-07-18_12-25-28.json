@@ -1,0 +1,966 @@
+{
+    "results": [
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "Local_Disk",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "1"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2023-01-16 15:54:50.347000+00:00",
+            "description": "",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2023-12-01 16:45:55.314000+00:00",
+            "moid": "63c5734a6275722d3021af6d",
+            "name": "Demo_Boot",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60508e456972652d30003bd5",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60508e456972652d30003bd5"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60508e456972652d30003bd5",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60508e456972652d30003bd5"
+                }
+            ],
+            "profiles": [],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "boot-m2-2",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MSTOR-RAID"
+                },
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "boot-m2-1",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MSTOR-RAID"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "boot-vmedia",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "cimc-mapped-hdd"
+                },
+                {
+                    "class_id": "boot.Usb",
+                    "enabled": true,
+                    "name": "boot-usb",
+                    "object_type": "boot.Usb",
+                    "subtype": "usb-fdd"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2023-09-21 00:37:08.454000+00:00",
+            "description": "",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2024-02-02 17:59:10.136000+00:00",
+            "moid": "650b90346275723001c57f3d",
+            "name": "pol-cohesity-boot-order",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60508e456972652d30003bd5",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60508e456972652d30003bd5"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60508e456972652d30003bd5",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60508e456972652d30003bd5"
+                }
+            ],
+            "profiles": [],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "LOCALDISK",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MSTOR-RAID"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2023-10-09 16:39:14.519000+00:00",
+            "description": "",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2023-12-18 03:48:38.743000+00:00",
+            "moid": "65242cb26275723001a9c825",
+            "name": "BootOrderPolicy",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60508e456972652d30003bd5",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60508e456972652d30003bd5"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60508e456972652d30003bd5",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60508e456972652d30003bd5"
+                }
+            ],
+            "profiles": [],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "VMwareESXI",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MRAID"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-KVM-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-CIMC-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "cimc-mapped-dvd"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2023-12-17 04:25:57.809000+00:00",
+            "description": "",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2024-05-07 13:37:34.849000+00:00",
+            "moid": "657e78556275723001bc9f42",
+            "name": "UCS-SJC-Boot-Policy-VMware-01",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60508e456972652d30003bd5",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60508e456972652d30003bd5"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60508e456972652d30003bd5",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60508e456972652d30003bd5"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.Profile",
+                    "moid": "663a2e7f77696e31015510de",
+                    "link": "https://intersight.com/api/v1/server/Profiles/663a2e7f77696e31015510de"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-CIMC-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "cimc-mapped-dvd"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-KVM-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                },
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "Local-Disk-1",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MSTOR-RAID"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2021-06-03 18:29:36.957000+00:00",
+            "description": "Linux Boot Policy for Cisco dCloud demonstration.",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2024-02-16 19:24:27.668000+00:00",
+            "moid": "60b91f906275722d300f28df",
+            "name": "UCS-WS-Boot-Policy-Linux-01",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60aeb29d6972652d303bbe20",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60aeb29d6972652d303bbe20",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.ProfileTemplate",
+                    "moid": "60b921d877696e2d303f6816",
+                    "link": "https://intersight.com/api/v1/server/ProfileTemplates/60b921d877696e2d303f6816"
+                },
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.ProfileTemplate",
+                    "moid": "60ba6cd877696e2d30faf2c5",
+                    "link": "https://intersight.com/api/v1/server/ProfileTemplates/60ba6cd877696e2d30faf2c5"
+                },
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.Profile",
+                    "moid": "60ba973177696e2d3001d58e",
+                    "link": "https://intersight.com/api/v1/server/Profiles/60ba973177696e2d3001d58e"
+                },
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.Profile",
+                    "moid": "65cfb66b77696e310163af66",
+                    "link": "https://intersight.com/api/v1/server/Profiles/65cfb66b77696e310163af66"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-CIMC-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "cimc-mapped-dvd"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-KVM-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                },
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "Local-Disk-1",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MSTOR-RAID"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2021-06-07 18:22:32.938000+00:00",
+            "description": "Windows Boot Policy for Cisco dCloud demonstration.",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2024-02-15 22:54:55.637000+00:00",
+            "moid": "60be63e86275722d3084d92d",
+            "name": "UCS-WS-Boot-Policy-Windows-01",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60aeb29d6972652d303bbe20",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60aeb29d6972652d303bbe20",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.Profile",
+                    "moid": "60ba98be77696e2d30021ae4",
+                    "link": "https://intersight.com/api/v1/server/Profiles/60ba98be77696e2d30021ae4"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-CIMC-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "cimc-mapped-dvd"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-KVM-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                },
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "UEFI_OS",
+                        "name": "BOOTx64.EFI",
+                        "object_type": "boot.Bootloader",
+                        "path": "\\\\EFI\\\\BOOT\\\\"
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "VMwareESXi",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MSTOR-RAID"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2021-06-07 18:30:40.196000+00:00",
+            "description": "VMware Boot Policy for Cisco dCloud demonstration.",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2024-02-15 23:04:59.156000+00:00",
+            "moid": "60be65cf6275722d30853362",
+            "name": "UCS-WS-Boot-Policy-VMware-01",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60aeb29d6972652d303bbe20",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60aeb29d6972652d303bbe20",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.ProfileTemplate",
+                    "moid": "60ba6cd877696e2d30faf2c9",
+                    "link": "https://intersight.com/api/v1/server/ProfileTemplates/60ba6cd877696e2d30faf2c9"
+                },
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.Profile",
+                    "moid": "60ba9a5e77696e2d30026ace",
+                    "link": "https://intersight.com/api/v1/server/Profiles/60ba9a5e77696e2d30026ace"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-CIMC-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "cimc-mapped-dvd"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-KVM-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                },
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "Local-Disk-1",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MRAID"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2021-06-08 22:22:25.388000+00:00",
+            "description": "Windows MRAID Boot Policy for Cisco dCloud demonstration.",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2022-12-14 19:13:41.166000+00:00",
+            "moid": "60bfeda06275722d30cbf5b0",
+            "name": "UCS-WS-Boot-Policy-Windows-MRAID-01",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60aeb29d6972652d303bbe20",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60aeb29d6972652d303bbe20",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.ProfileTemplate",
+                    "moid": "60ba6cd677696e2d30faf297",
+                    "link": "https://intersight.com/api/v1/server/ProfileTemplates/60ba6cd677696e2d30faf297"
+                },
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.Profile",
+                    "moid": "60bfe53b77696e2d30d22897",
+                    "link": "https://intersight.com/api/v1/server/Profiles/60bfe53b77696e2d30d22897"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-CIMC-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "cimc-mapped-dvd"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-KVM-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                },
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "Local-Disk-1",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MRAID"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2024-02-15 23:03:03.468000+00:00",
+            "description": "VMware MRAID Boot Policy for Cisco dCloud demonstration.",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2024-02-15 23:05:09.726000+00:00",
+            "moid": "65ce98276275723001e310ac",
+            "name": "UCS-WS-Boot-Policy-VMware-MRAID-01",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60aeb29d6972652d303bbe20",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60aeb29d6972652d303bbe20",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60aeb29d6972652d303bbe20"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.Profile",
+                    "moid": "60bff25d77696e2d30d47a19",
+                    "link": "https://intersight.com/api/v1/server/Profiles/60bff25d77696e2d30d47a19"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "CRED-HD",
+                    "object_type": "boot.LocalDisk",
+                    "slot": ""
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2024-03-11 12:28:25.201000+00:00",
+            "description": "",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2024-07-17 18:23:28.815000+00:00",
+            "moid": "65eef8e862757230019624d5",
+            "name": "BOOT",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60c90d6c6972652d305d8e0a",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60c90d6c6972652d305d8e0a"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60c90d6c6972652d305d8e0a",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60c90d6c6972652d305d8e0a"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.ProfileTemplate",
+                    "moid": "6648079a77696e3101718467",
+                    "link": "https://intersight.com/api/v1/server/ProfileTemplates/6648079a77696e3101718467"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "Disk",
+                    "object_type": "boot.LocalDisk",
+                    "slot": ""
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "CIMC",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2024-07-03 06:56:05.897000+00:00",
+            "description": "",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": true,
+            "mod_time": "2024-07-17 18:23:27.200000+00:00",
+            "moid": "6684f60562757230017636a1",
+            "name": "Boot-_Demo_Profile",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60c90d6c6972652d305d8e0a",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60c90d6c6972652d305d8e0a"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60c90d6c6972652d305d8e0a",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60c90d6c6972652d305d8e0a"
+                }
+            ],
+            "profiles": [],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "virt-media-01",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                },
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "local-disk-01",
+                    "object_type": "boot.LocalDisk",
+                    "slot": ""
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2024-07-10 08:44:06.280000+00:00",
+            "description": "",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": true,
+            "mod_time": "2024-07-17 18:23:29.429000+00:00",
+            "moid": "668e49d66275723001ac2d8c",
+            "name": "boot-test",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "60c90d6c6972652d305d8e0a",
+                "link": "https://intersight.com/api/v1/organization/Organizations/60c90d6c6972652d305d8e0a"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "60c90d6c6972652d305d8e0a",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/60c90d6c6972652d305d8e0a"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.ProfileTemplate",
+                    "moid": "668e5b1277696e310115ed14",
+                    "link": "https://intersight.com/api/v1/server/ProfileTemplates/668e5b1277696e310115ed14"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-CIMC-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "cimc-mapped-dvd"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-KVM-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                },
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "UEFI_OS",
+                        "name": "BOOTx64.EFI",
+                        "object_type": "boot.Bootloader",
+                        "path": "\\\\EFI\\\\BOOT\\\\"
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "VMwareESXi",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MSTOR-RAID"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2022-10-04 08:54:22.710000+00:00",
+            "description": "",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2022-10-04 11:07:58.942000+00:00",
+            "moid": "633bf4be6275722d30de269e",
+            "name": "UCS-M6-BOOT-Policy-01",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "632c78c76972652d30356cfb",
+                "link": "https://intersight.com/api/v1/organization/Organizations/632c78c76972652d30356cfb"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "632c78c76972652d30356cfb",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/632c78c76972652d30356cfb"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.Profile",
+                    "moid": "633bf26e77696e2d314100b7",
+                    "link": "https://intersight.com/api/v1/server/Profiles/633bf26e77696e2d314100b7"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        },
+        {
+            "account_moid": "59bc454c16267c000192f683",
+            "ancestors": [],
+            "boot_devices": [
+                {
+                    "bootloader": {
+                        "class_id": "boot.Bootloader",
+                        "description": "",
+                        "name": "",
+                        "object_type": "boot.Bootloader",
+                        "path": ""
+                    },
+                    "class_id": "boot.LocalDisk",
+                    "enabled": true,
+                    "name": "VMwareESXI",
+                    "object_type": "boot.LocalDisk",
+                    "slot": "MRAID"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-KVM-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "kvm-mapped-dvd"
+                },
+                {
+                    "class_id": "boot.VirtualMedia",
+                    "enabled": true,
+                    "name": "Virtual-Media-CIMC-DVD-1",
+                    "object_type": "boot.VirtualMedia",
+                    "subtype": "cimc-mapped-dvd"
+                }
+            ],
+            "class_id": "boot.PrecisionPolicy",
+            "configured_boot_mode": "Uefi",
+            "create_time": "2023-12-18 12:02:24.556000+00:00",
+            "description": "",
+            "domain_group_moid": "5b25418c7a7662743465cf4c",
+            "enforce_uefi_secure_boot": false,
+            "mod_time": "2023-12-18 12:09:05.066000+00:00",
+            "moid": "658034d062757230014f5dcc",
+            "name": "UCS-SJC-Boot-Policy-VMware-02",
+            "object_type": "boot.PrecisionPolicy",
+            "organization": {
+                "class_id": "mo.MoRef",
+                "object_type": "organization.Organization",
+                "moid": "632c78c76972652d30356cfb",
+                "link": "https://intersight.com/api/v1/organization/Organizations/632c78c76972652d30356cfb"
+            },
+            "owners": [
+                "59bc454c16267c000192f683"
+            ],
+            "permission_resources": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "organization.Organization",
+                    "moid": "632c78c76972652d30356cfb",
+                    "link": "https://intersight.com/api/v1/organization/Organizations/632c78c76972652d30356cfb"
+                }
+            ],
+            "profiles": [
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.ProfileTemplate",
+                    "moid": "658035bd77696e3101a4f8a9",
+                    "link": "https://intersight.com/api/v1/server/ProfileTemplates/658035bd77696e3101a4f8a9"
+                },
+                {
+                    "class_id": "mo.MoRef",
+                    "object_type": "server.Profile",
+                    "moid": "6580366077696e3101a4fe7d",
+                    "link": "https://intersight.com/api/v1/server/Profiles/6580366077696e3101a4fe7d"
+                }
+            ],
+            "shared_scope": "",
+            "tags": []
+        }
+    ],
+    "object_type": "boot.PrecisionPolicy.List",
+    "timestamp": "2024-07-18_12-25-28"
+}
