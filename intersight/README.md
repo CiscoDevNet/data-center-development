@@ -1,4 +1,8 @@
+# Intersight Automation
 
+## Overview
+
+This section covers how to automate Cisco Intersight. We will be running scripts and configurations against the [Cisco Intersight - Manage Infrastructure from the Cloud v1](https://dcloud2-rtp.cisco.com/content/instantdemo/cisco-intersight-infrastructure-services) pod on Cisco dCloud.
 
 ## Installation
 
@@ -20,9 +24,9 @@ pip install intersight
 
 ### Claim dCloud Intersight Pod and API Keys
 
-Go to Cisco Intersight - Manage Infrastructure from the Cloud v1 
+Go to [Cisco Intersight - Manage Infrastructure from the Cloud v1](https://dcloud2-rtp.cisco.com/content/instantdemo/cisco-intersight-infrastructure-services) on Cisco dCloud
 
-https://dcloud2-rtp.cisco.com/content/instantdemo/cisco-intersight-infrastructure-services
+
 
 
 Enter Intersight
