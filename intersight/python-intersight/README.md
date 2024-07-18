@@ -5,7 +5,7 @@
 Run the Authentiction
 
 ```bash
-python3 auhtenticate.py
+python3 authenticate.py
 ```
 
 the reuslts should be similar to:
