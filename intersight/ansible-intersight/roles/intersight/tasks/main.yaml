@@ -1,0 +1,12 @@
+---
+- name: List UCS Domains
+  intersight_rest:
+    key_id: "{{ intersight_key_id }}"
+    secret_key: "{{ intersight_secret_key }}"
+    path: /ucs-central/DomainProfiles
+    method: GET
+  register: ucs_domains_response
+
+- name: Display UCS Domains
+  debug:
+    msg: "{{ ucs_domains_response }}"

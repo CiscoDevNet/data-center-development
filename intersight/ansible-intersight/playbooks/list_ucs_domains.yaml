@@ -1,0 +1,6 @@
+---
+- name: List UCS Domains using Intersight API
+  hosts: ucs_domains
+  gather_facts: no
+  roles:
+    - intersight
