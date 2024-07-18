@@ -68,8 +68,8 @@ def get_api_client(
 
 
 # Example usage
-api_key = os.getenv("api_key")
-api_key_file = os.getenv("api_key_file")
+api_key = os.getenv("intersight_api_key")
+api_key_file = os.getenv("intersight_api_key_file")
 
 if api_key and api_key_file:
     client = get_api_client(api_key, api_secret_file=api_key_file)
