@@ -19,7 +19,7 @@ Run the Authentiction
 python3 authenticate.py
 ```
 
-the reuslts should be similar to:
+- Results:
 
 ```
 Reading API key from file: ./my-api-key-SecretKey.txt
