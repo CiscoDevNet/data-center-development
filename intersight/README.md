@@ -40,21 +40,21 @@ Choose Generate API Key > version 3 (giving it any name and expiration > copy AP
 Copy the Secret key to this dir (data-center-development/intersight)
 
 
-### Prepare Python Script for Authentication
+### Prepare for Authentication
 
 
 Export the API Key and Secret Key in the authenticate.py file like so (be sure you're in your virtual environment):
 
 Linux/Mac
 ```
-export api_key="59bc454c16267c000192f683/669867d4756461330157a6fc/66986e087564613101976ffd"
-export api_key_file="path/to/my-api-key-SecretKey.txt"
+export intersight_api_key="59bc454c16267c000192f683/669867d4756461330157a6fc/66986e087564613101976ffd"
+export intersight_api_key_file="../my-api-key-SecretKey.txt"
 ```
 
 Windows
 ```
-set export api_key=59bc454c16267c000192f683/669867d4756461330157a6fc/66986e087564613101976ffd
-set api_key_file=path\to\my-api-key-SecretKey.txt
+set intersight_api_key=59bc454c16267c000192f683/669867d4756461330157a6fc/66986e087564613101976ffd
+set intersight_api_key_file=..\my-api-key-SecretKey.txt
 ```
 
 
