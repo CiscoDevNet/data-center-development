@@ -43,11 +43,18 @@ Copy the Secret key to this dir (data-center-development/intersight)
 ### Prepare Python Script for Authentication
 
 
-Reference the API Key and Secret Key in the authenticate.py file like so:
+Export the API Key and Secret Key in the authenticate.py file like so (be sure you're in your virtual environment):
 
+Linux/Mac
 ```
-api_key = "blahblahblah"
-api_key_file = "my-api-key-SecretKey.txt"
+export api_key="59bc454c16267c000192f683/669867d4756461330157a6fc/66986e087564613101976ffd"
+export api_key_file="path/to/my-api-key-SecretKey.txt"
+```
+
+Windows
+```
+set export api_key=59bc454c16267c000192f683/669867d4756461330157a6fc/66986e087564613101976ffd
+set api_key_file=path\to\my-api-key-SecretKey.txt
 ```
 
 ## Usage
@@ -63,10 +70,10 @@ python3 auhtenticate.py
 the reuslts should be similar to:
 
 ```
-Reading API key from file: my-api-key-SecretKey.txt
+Reading API key from file: ./my-api-key-SecretKey.txt
 Detected EC private key format
 API client created successfully
-<intersight.api_client.ApiClient object at 0x1076b3a10>
+<intersight.api_client.ApiClient object at 0x109040410>
 ```
 
 
