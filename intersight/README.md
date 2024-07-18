@@ -57,28 +57,5 @@ set export api_key=59bc454c16267c000192f683/669867d4756461330157a6fc/66986e08756
 set api_key_file=path\to\my-api-key-SecretKey.txt
 ```
 
-## Usage
 
-### Authenticate
-
-Run the Authentiction
-
-```bash
-python3 auhtenticate.py
-```
-
-the reuslts should be similar to:
-
-```
-Reading API key from file: ./my-api-key-SecretKey.txt
-Detected EC private key format
-API client created successfully
-<intersight.api_client.ApiClient object at 0x109040410>
-```
-
-
-
-## Reference
-
-[intersight-python](https://github.com/CiscoDevNet/intersight-python?tab=readme-ov-file) on Cisco DevNet
 
