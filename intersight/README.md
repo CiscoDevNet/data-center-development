@@ -39,7 +39,7 @@ From the top menu, choose `System`
 ![image](https://github.com/user-attachments/assets/cebef1ea-f554-4d05-bd88-0cb5a4242d8e)
 
 
-Choose Generate API Key > version 3 (giving it any name and expiration > copy API Key ID and save the Secret Key.
+Choose **Generate API Key** > **version 3** (giving it any name and expiration > copy and save the **API Key ID** and download the **Secret Key**.
 
 Copy the Secret key from your Downloads to this dir (data-center-development/intersight)
 
