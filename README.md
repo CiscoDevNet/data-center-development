@@ -5,7 +5,7 @@
 
 This is a repository for code and instructions to help you interact with and automate Cisco Data Center technologies, such as Nexus Switches, NX-OS, Application Centric Infrastructure (ACI), Unified Computing System (UCS), Instersight, and more.
 
-The code in these directories was primarily tested against labs in Cisco Modeling Labs (CML), and we've included sections here about setting up CML, as well as setting up ProxMox to host CML as a virtual machine.
+The code in these directories was primarily tested against the free [sandboxes from Cisco DevNet](https://devnetsandbox.cisco.com), as well as labs in Cisco Modeling Labs (CML). We've included sections here about setting up [CML](https://github.com/xanderstevenson/data-center-development/tree/main/cml), as well as setting up [ProxMox](https://github.com/xanderstevenson/data-center-development/tree/main/proxmox) to host CML as a virtual machine.
 
 <br>
 
