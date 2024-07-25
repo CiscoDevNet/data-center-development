@@ -29,7 +29,7 @@ Go to [Cisco Intersight - Manage Infrastructure from the Cloud v1](https://dclou
 
 
 
-Enter Intersight
+Click **View** and then **Go to Intersight**
 
 ![image](https://github.com/user-attachments/assets/fb3394f8-c677-41a1-8b8e-157308f6d555)
 
