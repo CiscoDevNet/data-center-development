@@ -41,7 +41,7 @@ This command will open your default text editor (e.g., vi or nano), where you ca
 Here's what mine looks like for the ACI Simulator Always-On sandbox:
 
 ```bash
-ansible_user: admin
+ansible_user: 'admin'
 ansible_password: '!v3G@!4@Y'
 
 ```
