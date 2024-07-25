@@ -1,0 +1,74 @@
+---
+- name: Add new leaf switch to ACI fabric
+  hosts: sandboxapicdc
+  gather_facts: no
+
+  vars_files:
+    - ../vault.yaml  # Adjust the path relative to the playbook location
+
+  tasks:
+    - name: Debug Hostname
+      debug:
+        msg: "APIC Hostname: {{ apic_hostname }}"
+
+    - name: Debug Username
+      debug:
+        msg: "APIC Username: {{ apic_username }}"
+
+    - name: Authenticate to APIC
+      aci_rest:
+        host: "{{ apic_hostname }}"
+        username: "{{ apic_username }}"
+        password: "{{ apic_password }}"
+        validate_certs: false
+        method: post
+        path: "/api/aaaLogin.json"
+        content: 
+          aaaUser:
+            attributes:
+              name: "{{ apic_username }}"
+              pwd: "{{ apic_password }}"
+      register: login_response
+
+    - name: Debug Login Response
+      debug:
+        var: login_response
+
+    - name: Extract token
+      set_fact:
+        token: "{{ login_response.imdata[0].aaaLogin.attributes.token }}"
+
+    - name: Debug Token
+      debug:
+        msg: "Token: {{ token }}"
+
+    - name: Add new leaf switch
+      aci_rest:
+        host: "{{ apic_hostname }}"
+        username: "{{ apic_username }}"
+        password: "{{ apic_password }}"
+        validate_certs: false
+        method: post
+        path: "/api/node/mo/uni/fabric.json"
+        content: 
+          fabricNode:
+            attributes:
+              name: "{{ leaf_switch_name }}"
+              role: leaf
+              fabricSt: active
+              model: "{{ leaf_switch_model }}"
+              serial: "{{ leaf_switch_serial }}"
+              address: "{{ leaf_switch_mgmt_ip }}"
+              lcOwn: local
+              modTs: "{{ ansible_date_time.iso8601 }}"
+              userdom: all
+              vendor: Cisco Systems, Inc
+              version: "{{ leaf_switch_version }}"
+              monPolDn: "uni/fabric/monfab-default"
+        headers:
+          Cookie: "APIC-cookie={{ token }}"
+      register: add_leaf_response
+
+    - name: Debug Add Leaf Response
+      debug:
+        var: add_leaf_response

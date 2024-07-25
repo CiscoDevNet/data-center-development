@@ -2,8 +2,19 @@
 - name: Gather ACI Facts
   hosts: sandboxapicdc
   gather_facts: false
+  vars_files:
+    - ../vault.yaml
 
   tasks:
+
+
+    - name: Debug ACI Credentials
+      debug:
+        msg: 
+          - "ACI Username: {{ aci_username }}"
+          - "ACI Password: {{ aci_password }}"  # Be cautious, as this will print sensitive information to the console
+
+
 
     - name: Get Access Token
       uri:
@@ -13,8 +24,8 @@
         body:
           aaaUser:
             attributes:
-              name: "admin"
-              pwd: "!v3G@!4@Y"
+              name: "{{ aci_username }}"
+              pwd: "{{ aci_password }}"
         validate_certs: no
         status_code: 200
         return_content: yes
