@@ -22,6 +22,8 @@ Example Terraform Configuration:
 
 > Note: these results shown are for the **get_aci_system** config
 
+<br>
+
 ```bash
 terraform init
 ```
