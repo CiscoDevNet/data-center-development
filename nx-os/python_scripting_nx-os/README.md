@@ -259,7 +259,7 @@ Monitor syslog messages for specific events and send alerts.
 
 These scripts are designed to run from your local device, such as a laptop, desktop, server, or control node. 
 
-- You must create an inventory.txt file and place it in the same directory from which you will run these scripts. Here is the format of inventory.txt:
+- You must create an [inventory.txt](https://github.com/xanderstevenson/data-center-development/blob/main/nx-os/python_scripting_nx-os/local_device/inventory.txt) file and place it in the same directory from which you will run these scripts. Here is the format of inventory.txt:
 
 ```
 192.168.254.101,admin,cisco
@@ -269,7 +269,7 @@ These scripts are designed to run from your local device, such as a laptop, desk
 
 <br>
 
--Python3 must be installed in order to run them. All libraries needed to run them should be either included in the Python standard library or installed from the [requirements.txt](https://github.com/xanderstevenson/data-center-development/blob/main/requirements.txt) file found at the root of this repo, like so:
+- Python3 must be installed in order to run them. All libraries needed to run them should be either included in the Python standard library or installed from the [requirements.txt](https://github.com/xanderstevenson/data-center-development/blob/main/requirements.txt) file found at the root of this repo, like so:
 
 ```bash
 pip install -r requirements.txt
@@ -295,13 +295,19 @@ python3 example_script.py
 
 For each device listed in inventory.txt, it executes three commands (show interface brief, show ip route, show running-config) to gather network interface status, IP routing information, and the current running configuration. The script captures the output of each command and saves it to timestamped text files (interface_brief_YYYY-MM-DD_HH-MM-SS.txt, ip_route_YYYY-MM-DD_HH-MM-SS.txt, running_config_YYYY-MM-DD_HH-MM-SS.txt) within a directory named interfaces_routes_running-config.
 
+```bash
+python3 interfaces_routes_running-config.py
+```
+
 <br>
 
 **2. automated_backup.py**
 
 This Python script automates the backup process for network devices specified in an inventory.txt file. It connects to each device using SSH, retrieves the show running-config, show log, and show version outputs, and saves them into timestamped text files within an automated_backup directory. It first reads device credentials from the inventory.txt, establishes SSH connections using Paramiko, executes the commands, captures their outputs, and organizes them neatly into labeled sections within each backup file.
 
-
+```bash
+python3 automated_backup.py
+```
 
 
 
