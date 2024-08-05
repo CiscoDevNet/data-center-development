@@ -132,7 +132,7 @@ cd /bootflash/scripts
 
 #### Different ways to schedule and run the on-device Python scripts:
 
-To schedule and run the nxos_resources.py script on Cisco NX-OS, you have several options depending on where you want to execute it from (Guest Shell, Bash, NX-CLI, or externally via API/cURL). Below are the different methods: 
+To schedule and run the scripts on Cisco NX-OS, you have several options depending on where you want to execute them from (Guest Shell, Bash, NX-CLI, or externally via API/cURL). Below are the different methods: 
 
 <br>
 
@@ -155,7 +155,7 @@ Add a cron job entry to schedule the script (e.g., to run every hour):
 You can manually execute the script or include it in another Bash script:
 
 Manual execution:
-```python /bootflash/scripts/nxos_resources.py```
+```python3 /bootflash/scripts/nxos_resources.py```
 
 Include in another script:
 
