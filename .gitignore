@@ -12,6 +12,9 @@ crash.log
 # .terraform directory
 .terraform/
 
+# Intersight - block intersight API key upload
+intersight/my-api-key-SecretKey.txt
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
