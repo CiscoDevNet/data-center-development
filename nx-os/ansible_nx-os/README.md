@@ -160,7 +160,7 @@ export NXOS_Password=
 
 ## Removing created resources
 
-- The above playbooks created the following resources:
+The above playbooks created the following resources:
 
 **VLANs**
 
@@ -172,13 +172,16 @@ export NXOS_Password=
 ansible_vrf01                                                 
 ansible_vrf02 
 
+<br>
 
-- you can remove them in global configuration mode with the following commands:
+You can remove them in global configuration mode with the following commands:
 
+```bash
 no vlan 1050
 no vlan 1051
 no vrf context ansible_vrf01
 no vrf context ansible_vrf02
+```
 
 <br>
 
