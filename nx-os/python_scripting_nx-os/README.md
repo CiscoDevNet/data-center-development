@@ -136,7 +136,7 @@ To schedule and run the nxos_resources.py script on Cisco NX-OS, you have severa
 
 <br>
 
-1. From within the Guest Shell (Cron Job)
+**1. From within the Guest Shell (Cron Job)**
 You can use cron in the Guest Shell to schedule the script:
 
 Open the crontab file for editing:
@@ -149,7 +149,7 @@ Add a cron job entry to schedule the script (e.g., to run every hour):
 <br><br>
 <br>
 
-2. From Bash (Manual Execution or Script)
+**2. From Bash (Manual Execution or Script)**
    
 You can manually execute the script or include it in another Bash script:
 
@@ -171,8 +171,7 @@ chmod +x your_script.sh
 ```
 <br><br>
 
-
-3. From NX-CLI (EEM Script)
+**3. From NX-CLI (EEM Script)**
 You can use Embedded Event Manager (EEM) to run the script:
 
 Create an EEM applet:
@@ -184,7 +183,7 @@ action 1.0 cli command "guestshell run python /bootflash/scripts/nxos_resources.
 ```
 <br><br>
 
-4. From Outside via API/cURL
+**4. From Outside via API/cURL**
 You can use the NX-API to execute CLI commands remotely, including running the script:
 
 Enable NX-API on the device:
@@ -199,8 +198,7 @@ curl -X POST -d '{"ins_api": {"version": "1.0", "type": "cli_show", "chunk": "0"
 <br>
 <br>
 
-
-5. From an External Scheduler (e.g., a remote server using SSH)
+**5. From an External Scheduler (e.g., a remote server using SSH)**
    
 You can use a remote scheduler or cron job on another machine to SSH into the NX-OS device and run the script:
 
