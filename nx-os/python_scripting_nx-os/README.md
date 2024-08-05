@@ -137,6 +137,7 @@ To schedule and run the nxos_resources.py script on Cisco NX-OS, you have severa
 <br>
 
 **1. From within the Guest Shell (Cron Job)**
+
 You can use cron in the Guest Shell to schedule the script:
 
 Open the crontab file for editing:
