@@ -87,16 +87,8 @@ export NXOS_Password=
 
   <br>
 
-- Name: `backup_config.yaml`
-  - Purpose: Backup the current configuration of NX-OS devices
-  - How to run:
 
-    ```bash
-    ansible-playbook playbooks/backup_config.yaml
-    ```
-  <br>
-
-- Name: `gather_facts.yaml`
+  - Name: `gather_facts.yaml`
   - Purpose: Gather facts from NX-OS devices
   - How to run:
 
@@ -104,6 +96,15 @@ export NXOS_Password=
     ansible-playbook playbooks/gather_facts.yaml
     ```
 
+  <br>
+
+- Name: `backup_config.yaml`
+  - Purpose: Backup the current configuration of NX-OS devices
+  - How to run:
+
+    ```bash
+    ansible-playbook playbooks/backup_config.yaml
+    ```
   <br>
 
 
