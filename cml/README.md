@@ -1,6 +1,6 @@
 <h1 align="center">Cisco Modeling Labs (CML)</h1>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/54db8f58-d926-4313-a413-8432a249a4b0" width="2350">
+<img src="https://github.com/user-attachments/assets/54db8f58-d926-4313-a413-8432a249a4b0" width="350">
 </p>
 
 
