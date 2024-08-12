@@ -1,6 +1,6 @@
 # Data Center Development
+![DCD](https://github.com/user-attachments/assets/50a5b0ea-63f1-4565-88ce-75764876b3ec)
 
-![Uploading DCD.png…]()
 
 
 ## Project Description
