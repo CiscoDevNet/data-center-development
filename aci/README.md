@@ -1,4 +1,7 @@
-# Application Centric Infrastructure (ACI) Data Center Development
+<h1 align="center">Application Centric Infrastructure (ACI) Data Center Development</h1>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/c40205eb-4ec5-4491-bdb6-7cfc495451af" width="250">
+</p>
 
 
 Welcome to the ACI portion of the Data Center Development repository! This section contains automation scripts and configurations for managing Cisco ACI and Nexus Dashboard environments.
