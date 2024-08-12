@@ -13,9 +13,9 @@ Eth1/3          1       eth  access up      none                     1000(D) --
 Eth1/4          1       eth  access down    Link not connected       auto(D) --
 Eth1/5          1       eth  access down    Link not connected       auto(D) --
 Eth1/6          1       eth  access down    Link not connected       auto(D) --
-Eth1/7          1       eth  access down    Link not connected       auto(D) --
-Eth1/8          1       eth  access down    Link not connected       auto(D) --
-Eth1/9          1       eth  access down    Link not connected       auto(D) --
+Eth1/7          --      eth  routed down    Administratively down    auto(D) --
+Eth1/8          --      eth  routed down    Administratively down    auto(D) --
+Eth1/9          --      eth  routed down    Administratively down    auto(D) --
 Eth1/10         1       eth  access down    Link not connected       auto(D) --
 Eth1/11         1       eth  access down    Link not connected       auto(D) --
 Eth1/12         1       eth  access down    Link not connected       auto(D) --
@@ -71,3 +71,8 @@ Eth1/61         1       eth  access down    Link not connected       auto(D) --
 Eth1/62         1       eth  access down    Link not connected       auto(D) --
 Eth1/63         1       eth  access down    Link not connected       auto(D) --
 Eth1/64         1       eth  access down    Link not connected       auto(D) --
+
+-------------------------------------------------------------------------------
+Interface Secondary VLAN(Type)                    Status Reason                 
+-------------------------------------------------------------------------------
+Vlan1     --                                      down   Administratively down  

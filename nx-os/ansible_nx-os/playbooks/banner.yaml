@@ -38,7 +38,7 @@
         text: |
           *************************************************
           ***           Welcome to NX-OS CLI            ***
-          ***          Authorized access only           ***
+          ***      PyNet Labs + DevNet = Success        ***
           ***    Exec Banner Configured with Ansible    ***
           *************************************************
         state: present
