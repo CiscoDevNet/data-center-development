@@ -1,6 +1,6 @@
 # Data Center Development
 <p align="center">
-<img src="[https://github.com/xanderstevenson/diy-devops-dashboard/blob/main/static/site/Dashboard.png](https://github.com/user-attachments/assets/50a5b0ea-63f1-4565-88ce-75764876b3ec)" width="500">
+<img src="https://github.com/user-attachments/assets/50a5b0ea-63f1-4565-88ce-75764876b3ec" width="500">
 </p>
 
 ## Project Description
