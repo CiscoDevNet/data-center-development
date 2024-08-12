@@ -4,8 +4,8 @@
 </p>
 
 
-CML is used extensively in this rep. I've added thi section to explain how I added CML as a VM to ProxMox.
-For info on ProxMox see the proxmox directory in this repo. I've also included some links to CML resources.
+CML is used extensively in this repo. We've added this section to explain how we added CML as a VM to ProxMox.
+For info on ProxMox see the [Proxmox directory](https://github.com/CiscoDevNet/data-center-development/tree/main/proxmox) in this repo. I've also included some links to CML resources.
 
 <br>
 
