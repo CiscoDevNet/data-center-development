@@ -1,4 +1,4 @@
-# Proxmox Setup Guide
+<h1 align="center">Proxmox Setup Guide</h1>
 
 This guide will help you set up Proxmox on both a laptop and a MiniPC. We will cover steps for Mac, Windows, and Linux.
 
