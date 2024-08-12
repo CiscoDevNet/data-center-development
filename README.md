@@ -1,6 +1,6 @@
-# Data Center Development
+<h1 align="center">Data Center Development</h1>h1>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/50a5b0ea-63f1-4565-88ce-75764876b3ec" width="500">
+<img src="https://github.com/user-attachments/assets/50a5b0ea-63f1-4565-88ce-75764876b3ec" width="250">
 </p>
 
 ## Project Description
