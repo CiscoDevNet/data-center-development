@@ -1,9 +1,8 @@
 <h1 align="center">Cisco Modeling Labs (CML)</h1>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/54db8f58-d926-4313-a413-8432a249a4b0" width="250">
+<img src="https://github.com/user-attachments/assets/54db8f58-d926-4313-a413-8432a249a4b0" width="2350">
 </p>
 
-![CML-2]()
 
 CML is used extensively in this rep. I've added thi section to explain how I added CML as a VM to ProxMox.
 For info on ProxMox see the proxmox directory in this repo. I've also included some links to CML resources.
