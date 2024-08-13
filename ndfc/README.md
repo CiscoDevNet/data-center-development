@@ -1,7 +1,8 @@
 <h1 align="center">Nexus Dashboard Fabric Controller (NDFC)</h1>
 <p align="center">
-<img src="" width="150">
+<img src="https://github.com/user-attachments/assets/5859b29c-c0fe-43ae-b79f-7d52d7f7cdbd" width="150">
 </p>
+
 
 
 Welcome to the Nexus Dashboard Fabric Controller portion of the Data Center Development repository! This section contains automation scripts and configurations for managing Cisco NDFC.
@@ -27,8 +28,9 @@ For ACI, we will be utilizing the *Reservable* [vNexus Dashboard Fabric Controll
 Here is the infrastructure of the sandbox:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/user-attachments/assets/3df4b58e-4326-428a-9517-7492647580c9">
 </p>
+
 
 
 > **Note**: If you want to learn more about NDFC, check out these [FREE NDFC Learning Labs](https://developer.cisco.com/learning/search/?contentType=track,module,lab&keyword=NDFC&sortBy=luceneScore) from DevNet.
