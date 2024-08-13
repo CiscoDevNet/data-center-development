@@ -9,13 +9,10 @@ Here you will find scripts to automate actions in NDFC. The code generated here 
 
 <br>
 
-## The Code
+## The Python Scripts
 
 
 > Note: These scripts store and use the Cookie in/from a file called **ndfc_token.txt**. We've added it to the .gitignore to prevent it being published to GitHub but this is still not a secure way to store and use this token in production and is only being utlilized for demo purposes.
-
-
-### The Python Scripts
 
 
 1. [login_ndfc.py](./login_ndfc.py) - login using username and password. Verification is set to False to bypass the certificate error, so don't use in production.
