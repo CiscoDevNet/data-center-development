@@ -1,7 +1,4 @@
 <h1 align="center">Using REST APIs with Nexus Dashboard Fabric Controller (NDFC)</h1>
-<p align="center">
-<img src="" width="150">
-</p>
 
 ## Documentation
 
