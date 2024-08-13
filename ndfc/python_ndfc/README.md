@@ -14,15 +14,21 @@ Here you will find scripts to automate actions in NDFC. The code generated here 
 
 > Note: These scripts store and use the Cookie in/from a file called **ndfc_token.txt**. We've added it to the .gitignore to prevent it being published to GitHub but this is still not a secure way to store and use this token in production and is only being utlilized for demo purposes.
 
+The scripts are ran as such:
+
+```python
+python3 login_ndfc.py
+```
+
+<br>
 
 1. [login_ndfc.py](./login_ndfc.py) - login using username and password. Verification is set to False to bypass the certificate error, so don't use in production.
 
 The results will include the certificate warning (which you can ignore in this training) as well as the response code:
 
-python3 login_ndfc.py 
-/Users/alexstev/Data-Center/data-center-development/venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.10.20.60'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
+```
 Login Response Status Code: 200
+```
 
 <br>
 
@@ -30,7 +36,6 @@ Login Response Status Code: 200
 
 
 2. [get_switches_ndfc.py](./lget_switches_ndfc.py) - returns all switches in the inventory. Example output (truncated for brevity):
-
 
 [{"switchRoleEnum":"EdgeRouter","vrf":"management","fabricTechnology":"External","deviceType":"External","fabricId":3,"name":null,"domainID":0,"wwn":null,"membership":null,"ports":0,"model":"N9K-C9300v","version":null,"upTime":0,"ipAddress":"10.10.20.180","mgmtAddress":null,"vendor":"Cisco","displayHdrs":null,"displayValues":null,"colDBId":0,"fid":0,"isLan":false,"is_smlic_enabled":false,"present":true,
 
