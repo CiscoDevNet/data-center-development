@@ -1,6 +1,6 @@
 <h1 align="center">Application Centric Infrastructure (ACI) Data Center Development</h1>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/c40205eb-4ec5-4491-bdb6-7cfc495451af" width="250">
+<img src="https://github.com/user-attachments/assets/c40205eb-4ec5-4491-bdb6-7cfc495451af" width="150">
 </p>
 
 
