@@ -1,6 +1,6 @@
 <h1 align="center">Intersight Automation</h1>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/009a7f04-4fb4-4537-8d24-7e6a06319a30" width="250">
+<img src="https://github.com/user-attachments/assets/009a7f04-4fb4-4537-8d24-7e6a06319a30" width="150">
 </p>
 
 
