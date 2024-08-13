@@ -29,10 +29,10 @@ The results will include the certificate warning (which you can ignore in this t
 ```
 Login Response Status Code: 200
 ```
-
+**You *must* run this script first before running other scripts**
 <br>
 
-**You *must* run this script first before running other scripts**
+
 
 
 2. [get_switches_ndfc.py](./lget_switches_ndfc.py) - returns all switches in the inventory. Example output (truncated for brevity):
