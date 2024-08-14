@@ -1,7 +1,8 @@
 <h1 align="center">Automating NX-OS with pyATS</h1>
 <p align="center">
-<img src="" width="150">
+<img src="https://github.com/user-attachments/assets/80fc22dc-5b7a-4bc7-9690-a58c6a4a002e" width="200">
 </p>
+
 
 ## Overview 
 
