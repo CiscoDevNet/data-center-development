@@ -57,10 +57,10 @@ python3 tests/show_version_pyats_nx-os.py
 ## The pyATS Tests
 
 
-1. show_version_pyats_nx-os - shows the version information
+1. [show_version_pyats_nx-os](https://github.com/CiscoDevNet/data-center-development/blob/main/nx-os/pyats_nx-os/tests/show_version_pyats_nx-os.py) - shows the version information
 
 
-2. interface_collector_pyats_nx-os.py - provides a structured (JSON) summary of interface information for each device in the testbed. It includes details such as: Interface Name, IP address, Status, Protocol, and Additional Fields: Depending on the command, it might also include VLAN, duplex settings, and speed for interfaces.
+2. [interface_collector_pyats_nx-os.py](https://github.com/CiscoDevNet/data-center-development/blob/main/nx-os/pyats_nx-os/tests/interface_collector_pyats_nx-os.py) - provides a structured (JSON) summary of interface information for each device in the testbed. It includes details such as: Interface Name, IP address, Status, Protocol, and Additional Fields: Depending on the command, it might also include VLAN, duplex settings, and speed for interfaces.
 
 <br>
 
