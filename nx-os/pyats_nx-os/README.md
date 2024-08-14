@@ -20,7 +20,7 @@ I'm utlizing NX-OS running on a local instance of CML as described [here](https:
 
 ### Export the NX-OS credentials so they can be used by the testbed.
 
-I'm just using the default credentials for NX-OS in CML. I'm managing the password with pyATS Secret Strings, described in the section below. Credentials can also be managed with Ansible Vault or other secrets managers such as HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault.
+We are using the default credentials for NX-OS in CML (admin/cisco) and managing the password with pyATS Secret Strings, described in the section below. Credentials can also be managed with Ansible Vault or other secrets managers such as HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault.
 
 <br>
 
@@ -35,7 +35,9 @@ file is inadvertently exposed or accessed by unauthorized individuals, the encry
 remain protected, thus maintaining the integrity and security of the network testing
 environment. This approach not only reinforces the security posture of the testing framework
 but also aligns with best practices for handling sensitive information in network
-automation tasks." - - [Cisco pyATS Network Test and Automation Solution: Data-driven and reusable testing for modern networks](https://www.ciscopress.com/store/cisco-pyats-network-test-and-automation-solution-data-9780138031671) - a comprehensive book by our friendsJohn Capobianco and Dan Wade.
+automation tasks." - - [Cisco pyATS Network Test and Automation Solution: Data-driven and reusable testing for modern networks](https://www.ciscopress.com/store/cisco-pyats-network-test-and-automation-solution-data-9780138031671) 
+<br>
+- a comprehensive book by our friendsJohn Capobianco and Dan Wade.
 
 You can find information about using pyATS Secret Strings here: https://pubhub.devnetcloud.com/media/pyats/docs/cli/pyats_secret.html#pyats-secret
 
