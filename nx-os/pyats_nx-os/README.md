@@ -35,11 +35,11 @@ file is inadvertently exposed or accessed by unauthorized individuals, the encry
 remain protected, thus maintaining the integrity and security of the network testing
 environment. This approach not only reinforces the security posture of the testing framework
 but also aligns with best practices for handling sensitive information in network
-automation tasks." - [Cisco pyATS Network Test and Automation Solution: Data-driven and reusable testing for modern networks](https://www.ciscopress.com/store/cisco-pyats-network-test-and-automation-solution-data-9780138031671) - a comprehensive book by our friendsJohn Capobianco and Dan Wade.
+automation tasks." - [Cisco pyATS Network Test and Automation Solution: Data-driven and reusable testing for modern networks](https://www.ciscopress.com/store/cisco-pyats-network-test-and-automation-solution-data-9780138031671) - *a comprehensive book by our friends John Capobianco and Dan Wade.*
 
 You can find information about using pyATS Secret Strings here: https://pubhub.devnetcloud.com/media/pyats/docs/cli/pyats_secret.html#pyats-secret
 
-However, the best walkthrough I've seen regarding pyATS Secret Strings is in Appendix B of the pyATS book mentioned above.
+However, the best walkthrough we've seen regarding pyATS Secret Strings is in Appendix B of the pyATS book mentioned above.
 
 
 <br>
