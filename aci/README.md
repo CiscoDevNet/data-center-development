@@ -35,8 +35,9 @@ For ACI, we will be utilizing the [ACI Simulator Always-On sandbox](https://devn
 
 Here is the infrastructure of the sandbox:
 
-![image](https://github.com/user-attachments/assets/ec42f2eb-93ab-4b30-9fa2-0173e5802605)
-
+<p align="center">
+<img src="https://github.com/user-attachments/assets/ec42f2eb-93ab-4b30-9fa2-0173e5802605">
+</p>
 
 
 In addition, DevNet also offers a *Reservable* [ACI Simulator 6.0 sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/aci-simulator-sandbox_aci-simulator), although we don not make use of it in this repo.
@@ -55,7 +56,7 @@ In addition, DevNet also offers a *Reservable* [ACI Simulator 6.0 sandbox](https
 
 ## Lab Setup: utilizing the [ACI Simulator Always-On sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/ACI-Simulator-Always-On_aci-simulator-always-on) from DevNet
 
-- Navigate to [APIC](https://devnetsandbox.cisco.com/DevNet/catalog/ACI-Simulator-Always-On_aci-simulator-always-on) and login with the following credentials:
+- Navigate to [APIC](https://sandboxapicdc.cisco.com) and login with the following credentials:
 
 ```
 admin

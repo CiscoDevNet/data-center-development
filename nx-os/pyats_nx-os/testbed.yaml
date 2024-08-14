@@ -1,0 +1,21 @@
+testbed:
+  name: NX-OS_Testbed
+  credentials:
+    default:
+      username: "admin"
+      # Password "cisco" encoded with pyATS Secret Strings
+      password: "%ENC{w5PDosOUw5fDog==}"
+
+devices:
+  Nexus9k:
+    os: nxos
+    type: device
+    connections:
+      ssh:
+        protocol: ssh
+        ip: 192.168.254.101
+        port: 22
+        username: "admin"
+        # Password "cisco" encoded with pyATS Secret Strings
+        password: "%ENC{w5PDosOUw5fDog==}"
+    platform: nxos
