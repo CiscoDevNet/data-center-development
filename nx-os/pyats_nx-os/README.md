@@ -20,9 +20,6 @@ I'm utlizing NX-OS running on a local instance of CML as described [here](https:
 
 ### Export the NX-OS credentials so they can be used by the testbed.
 
-export NXOS_USERNAME="admin"
-export NXOS_PASSWORD="cisco"
-
 I'm just using the default credentials for NX-OS in CML. I'm managing the password with pyATS Secret Strings, described in the section below. Credentials can also be managed with Ansible Vault or other secrets managers such as HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault.
 
 <br>
