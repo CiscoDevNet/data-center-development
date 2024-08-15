@@ -70,6 +70,8 @@ cd nx-os/
 
 ```bash
 export NXOS_User=
+```
+```bash
 export NXOS_Password=
 ```
 
