@@ -45,4 +45,3 @@
       when: 
         - current_exec_banner is defined
         - current_exec_banner.stdout[0] is defined
-        - current_exec_banner.stdout[0].find("Welcome to NX-OS CLI") == -1

@@ -1,0 +1,8 @@
+---
+- name: Start tasks
+  ansible.builtin.debug:
+    msg: "START prepare_sros_tests/main.yaml"
+
+- name: Wait until everything is ready to go
+  ansible.builtin.pause:
+    seconds: 1
