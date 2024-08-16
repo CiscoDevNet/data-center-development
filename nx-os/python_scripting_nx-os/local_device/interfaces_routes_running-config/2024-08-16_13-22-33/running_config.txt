@@ -1,7 +1,7 @@
 
 !Command: show running-config
-!Running configuration last done at: Mon Aug  5 18:38:03 2024
-!Time: Mon Aug  5 19:11:22 2024
+!Running configuration last done at: Fri Aug 16 14:28:39 2024
+!Time: Fri Aug 16 17:11:30 2024
 
 version 10.3(1) Bios:version  
 hostname Nexus9k
@@ -18,8 +18,11 @@ feature interface-vlan
 
 no password strength-check
 username admin password 5 $5$EAEEHJ$ErmqgBh46aTCUfDJ4mGiqtlFybyzZNll201l1yUHFE.  role network-admin
+username admin sshkey ed25519 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ7lVu2mK8tEqI96BFYxIis9mAytIxIOba1BzGenRQjs alexstev@ALEXSTEV-M-FCUD
 username cisco password 5 $5$BNBNHF$xMWbbc2PrxsJ0MiSEGppB.zNrA9Y21GBbRlXc97JTr7  role network-admin
 username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+ssh key rsa 2048 
+ssh key ecdsa 256 
 
 banner motd @
 *************************************************
@@ -40,9 +43,12 @@ banner exec @
 
 @
 
+ssh kexalgos all
+
 ssh keytypes all
 
 ip domain-lookup
+crypto key generate rsa label Nexus9k modulus 2048
 copp profile strict
 snmp-server user admin network-admin auth md5 32292C130506682F651DC98CA9BA9759C0A8 priv aes-128 3752615D542D13530F26ABF9B4E6F21AD3A8 localizedV2key
 snmp-server user cisco network-admin auth md5 330C7B1C48275C5E0929FC8BF7F4891C94B4 priv aes-128 364F240717751B5C1E7CA9FAB1E6875D99A9 localizedV2key
@@ -200,8 +206,11 @@ interface mgmt0
 icam monitor scale
 
 line console
+  exec-timeout 0
 line vty
+  exec-timeout 0
 boot nxos bootflash:/nxos64-cs.10.3.1.F.bin 
 
+no logging console
 
 
