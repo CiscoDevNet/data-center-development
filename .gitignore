@@ -180,7 +180,7 @@ cython_debug/
 #.idea/
 
 # PyATS config
-pyats.conf
+nx-os/pyats_nx-os/pyats.conf
 
 # Ansible collections
-collections/ansible_collections
+nx-os/ansible_nx-os/collections/
