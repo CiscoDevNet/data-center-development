@@ -1,6 +1,6 @@
 <h1 align="center">Using Python to Automate the Nexus Dashboard Fabric Controller (NDFC)</h1>
 <p align="center">
-<img src="" width="150">
+<img src="https://github.com/user-attachments/assets/7b192c3d-db91-45cd-8e3d-da045613af2e" width="150">
 </p>
 
 ## The Code
