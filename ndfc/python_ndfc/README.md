@@ -35,6 +35,7 @@ Login Response Status Code: 200
 
 <br>
 
+
 2. [get_switches_ndfc.py](./lget_switches_ndfc.py) - returns all switches in the inventory. Example output (truncated for brevity):
 
 ```
@@ -42,6 +43,7 @@ Login Response Status Code: 200
 ```
 
 <br>
+
 
 3. [get_fabrics_ndfc.py](./lget_fabrics_ndfc.py) - returns all of the fabrics in the inventory. Example outut (truncated for brevity):
 
@@ -51,6 +53,7 @@ Login Response Status Code: 200
 
 <br>
 
+
 4. [get_vrfs_ndfc.py](./get_vrfs_ndfc.py) - returns all VRFs in the designated fabric. If you're using the DevNet NDFC sandbox, the initial configuration of the DevNet _Fabric will not have any VRFs, so an empty list will be returned:
 
 ```
@@ -58,6 +61,7 @@ Login Response Status Code: 200
 ```
 
 <br>
+
 
 5. [create_vrf_ndfc.py](./create_vrf_ndfc.py) - creates a VRF called "VRF_Python" in the DevNet _Fabric. The output will include:
 
@@ -68,6 +72,7 @@ The following VRF was created: {"VRF Id":51000,"VRF Name":"VRF_PYTHON"}
 > You can also verifiy the VRF was created with the **get_vrfs_ndc.py** script above
 
 <br>
+
 
 6. [create_vrf_ndfc.py](./delete_vrf_ndfc.py) - deletes the VRF "VRF_Python" in the DevNet _Fabric. The output will include:
 
