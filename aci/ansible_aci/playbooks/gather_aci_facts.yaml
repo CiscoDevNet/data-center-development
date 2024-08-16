@@ -7,15 +7,6 @@
 
   tasks:
 
-
-    - name: Debug ACI Credentials
-      debug:
-        msg: 
-          - "ACI Username: {{ aci_username }}"
-          - "ACI Password: {{ aci_password }}"  # Be cautious, as this will print sensitive information to the console
-
-
-
     - name: Get Access Token
       uri:
         url: "https://{{ ansible_host }}/api/aaaLogin.json"
