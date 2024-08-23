@@ -74,9 +74,11 @@ Each section will have specific instructions on how to run code. For example, in
 
 ## Infrastructure
 
-The infrastructure we automate in this repo ranges from the free Cisco DevNet sandboxes (both always on and reservable), to dCloud pods, and Cisco Modeling Labs. So even if you don’t have physical access to an expensive data center, you can still learn, practice with, and grok these technologies.![image](https://github.com/user-attachments/assets/f164199c-e132-4fc6-84fc-6b5fa0d7da47)
+The infrastructure we automate in this repo ranges from the free Cisco DevNet sandboxes (both always on and reservable), to dCloud pods, and Cisco Modeling Labs. So even if you don’t have physical access to an expensive data center, you can still learn, practice with, and grok these technologies.
 
-
+<p>
+  <img href="https://github.com/user-attachments/assets/c82e4eaa-c085-4979-99c9-3e009ebfae0b" width="150">
+</p>
 ![image](https://github.com/user-attachments/assets/c82e4eaa-c085-4979-99c9-3e009ebfae0b)
 
 <br>
