@@ -11,15 +11,17 @@ The code in these directories was primarily tested against the free [sandboxes f
 
 ### Table of Directories
 
+- [Application Centric Infrastructure (ACI)](https://github.com/xanderstevenson/data-center-development/tree/main/aci): ACI Data Center automation
+
 - [Cisco Modeling Labs (CML)](https://github.com/xanderstevenson/data-center-development/tree/main/cml) - How to install CML. Each section also contains info about how to using CML for the tools in that section.
 
+- [Intersight](https://github.com/xanderstevenson/data-center-development/tree/main/intersight): Automate Cisco Intersight
+  
 - [Proxmox Setup Guide](https://github.com/xanderstevenson/data-center-development/edit/main/proxmox/README.md): This guide will help you set up Proxmox on both a laptop and a MiniPC. We also cover steps for Mac, Windows, and Linux.
 
-- [NX-OS](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os): NX-OS Data Center Development. We have sections for automating NX-OS with Ansible, Python Scripting, and Terraform, as well as how to use Splunk Telemetry with NX-OS.
+- [Nexus Dashboard Fabric Controller](https://github.com/CiscoDevNet/data-center-development/tree/main/ndfc): Automate VXLAN/EVPN fabrics.
 
-- [Application Centric Infrastructure (ACI)](https://github.com/xanderstevenson/data-center-development/tree/main/aci): ACI Data Center Development.
-
-- [Intersight](https://github.com/xanderstevenson/data-center-development/tree/main/intersight): Automate Cisco Intersight.
+- [NX-OS](https://github.com/xanderstevenson/data-center-development/tree/main/nx-os/terraform_nx-os): NX-OS Data Center Development.
 
 
 <br>
@@ -69,3 +71,27 @@ Each section will have specific instructions on how to run code. For example, in
     ansible-playbook playbooks/backup_config.yaml
     ```
   <br>
+
+## Infrastructure
+
+The infrastructure we automate in this repo ranges from the free Cisco DevNet sandboxes (both always on and reservable), to dCloud pods, and Cisco Modeling Labs. So even if you don’t have physical access to an expensive data center, you can still learn, practice with, and grok these technologies.![image](https://github.com/user-attachments/assets/f164199c-e132-4fc6-84fc-6b5fa0d7da47)
+
+
+![image](https://github.com/user-attachments/assets/c82e4eaa-c085-4979-99c9-3e009ebfae0b)
+
+<br>
+
+## Tools
+
+The core tools to automate / orchestrate each Cisco Data Center product are Ansible, Python, and Terraform.
+
+![image](https://github.com/user-attachments/assets/ef8123e8-5b7a-460a-954a-ebe22e4188d1)
+
+<br>
+
+However, some sections have additional tools shown for automation and orchestration of the product.
+
+![image](https://github.com/user-attachments/assets/5029325e-f8f3-41cc-b52c-decfd505d80c)
+
+
+
