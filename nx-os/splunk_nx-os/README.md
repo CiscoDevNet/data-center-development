@@ -48,3 +48,14 @@ tar -xzpf splunkforwarder-9.2.2-d76edf6f0a15-Linux-x86_64.tgz --no-same-owner --
 
 - Follow Steps here: https://docs.splunk.com/Documentation/Forwarder/9.2.2/Forwarder/Installanixuniversalforwarder
 
+<br>
+
+## Resources
+
+Use Splunk to gain visibility into infrastructure, track inventory and power usage, authenticate and audit configuration changes, and collect performance data from network devices.
+
+**Download Free Trials of Splunk Cloud Platform and Splunk Enterprise**
+https://www.splunk.com/en_us/download.html/
+
+
+
