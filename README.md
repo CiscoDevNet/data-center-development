@@ -91,7 +91,8 @@ The core tools to automate / orchestrate each Cisco Data Center product are Ansi
 
 However, some sections have additional tools shown for automation and orchestration of the product.
 
-![image](https://github.com/user-attachments/assets/5029325e-f8f3-41cc-b52c-decfd505d80c)
+<p align="center"><img src="https://github.com/user-attachments/assets/5029325e-f8f3-41cc-b52c-decfd505d80c" width="450"></p>
+
 
 
 
