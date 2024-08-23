@@ -85,7 +85,7 @@ The infrastructure we automate in this repo ranges from the free Cisco DevNet sa
 
 The core tools to automate / orchestrate each Cisco Data Center product are Ansible, Python, and Terraform.
 
-![image](https://github.com/user-attachments/assets/ef8123e8-5b7a-460a-954a-ebe22e4188d1)
+<p align="center"><img src="https://github.com/user-attachments/assets/ef8123e8-5b7a-460a-954a-ebe22e4188d1" width="450"></p>
 
 <br>
 
