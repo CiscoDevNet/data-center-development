@@ -16,11 +16,11 @@ The instructions on how to perform all of the above can be found on the README.m
 
 <br>
 
-### Export the Username and Password of your NX-OS device (for CML, its admin/cisco)
+### Export the Username and Password of NDFC (these are the creds form the DevNet Sandbox).
 
 ```bash
-export NXOS_User=
-export NXOS_Password=
+export NDFC_User=admin
+export NDFC_Password=1vtG@lw@y
 ```
 
 <br>
