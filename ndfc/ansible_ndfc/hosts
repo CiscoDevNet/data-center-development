@@ -1,0 +1,2 @@
+[ndfc]
+ndfc_server ansible_host=10.10.20.60 ansible_user=admin ansible_password=1vtG@lw@y
