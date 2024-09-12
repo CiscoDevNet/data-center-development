@@ -3,6 +3,15 @@
 
 Welcome to the ACI portion of the Data Center Development repository! This section contains automation scripts and configurations for managing Cisco ACI and Nexus Dashboard environments.
 
+ACI was built with programmability in mind and designed to be configured and maintained through a central controller via a REST API. This API is how admins interact with the object-model allowing them to create, make changes, gather stats, and troubleshoot the ACI fabric.
+
+The REST API uses HTTP and supports all four CRUD methods:
+
+- Create new objects.
+- Read objects to view configuration and statistical data.
+- Update existing objects.
+- Delete objects that are no longer needed.
+
 
 ## Table of Contents
 
