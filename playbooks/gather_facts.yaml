@@ -1,0 +1,15 @@
+---
+- name: Gather major facts from DCNM
+  hosts: ndfc
+  gather_facts: no
+  collections:
+    - cisco.dcnm
+  tasks:
+    - name: Gather fabric information
+      cisco.dcnm.dcnm_fabric:
+        state: query
+      register: fabric_info
+
+    - name: Display fabric information
+      ansible.builtin.debug:
+        var: fabric_info
