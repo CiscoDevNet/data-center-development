@@ -30,7 +30,7 @@ As discussed in the [NDFC landing page](https://github.com/CiscoDevNet/data-cent
 ## Resources
 
 - Ansible Modules: https://docs.ansible.com/ansible/latest/collections/cisco/nxos/index.html]
-- https://github.com/CiscoDevNet/ansible-dcnm)
+- https://github.com/CiscoDevNet/ansible-dcnm
 
 
 
