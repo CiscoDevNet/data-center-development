@@ -16,12 +16,10 @@ The instructions on how to perform all of the above can be found on the README.m
 
 <br>
 
-### Export the Username and Password of NDFC (these are the creds form the DevNet Sandbox).
+## Insfrastructure 
 
-```bash
-export NDFC_User=admin
-export NDFC_Password=1vtG@lw@y
-```
+As discussed in the [NDFC landing page](https://github.com/CiscoDevNet/data-center-development/edit/main/ndfc) in this repo (this is a child directory of it), we will be using the [vNexus Dashboard Fabric Controller sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/vnexus-dashboard-fabric-controller_vnexus-dashboard-fabric-controller) provided by Cisco DevNet, but you are free to use other option.
+
 
 <br>
 
@@ -31,10 +29,8 @@ export NDFC_Password=1vtG@lw@y
 
 ## Resources
 
-- Ansible Modules: https://docs.ansible.com/ansible/latest/collections/cisco/nxos/index.html](https://github.com/CiscoDevNet/ansible-dcnm
+- Ansible Modules: https://docs.ansible.com/ansible/latest/collections/cisco/nxos/index.html](https://github.com/CiscoDevNet/ansible-dcnm)
 
-
-- CiscoNXOSFacts: https://github.com/automateyournetwork/CiscoNXOSFacts/tree/main
 
 
 
